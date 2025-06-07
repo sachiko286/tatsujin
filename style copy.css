@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+/* 
+font-family: "Noto Sans JP", sans-serif;
+font-family: "Shadows Into Light Two", cursive;
+font-family: "M PLUS Rounded 1c", sans-serif;
+ */
+
+/* 28-40:1024-1600 */
+/* 28-40:768-1600 */
+/* 26-36:375-767 */
+/* 28-40:768-1500 */
+
+/* 
+<!-- アクセス -->
+<?php get_template_part('parts/access') ?> 
+ */
