@@ -62,6 +62,11 @@ div.error-message {
 
 .js-header.is-scroll {
 	/* background: rgba(62, 62, 62, 0.2); */
+	background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 14.06%, rgba(0, 0, 0, 0.395831) 57.81%, rgba(0, 0, 0, 0) 100%);
+}
+
+.header-bg {
+	background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 14.06%, rgba(0, 0, 0, 0.395831) 57.81%, rgba(0, 0, 0, 0) 100%);
 }
 
 

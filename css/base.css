@@ -72,7 +72,7 @@ a:hover {
 }
 
 .color-black {
-	color: rgb(0, 0, 0);
+	color: rgba(85, 85, 85, 1);
 }
 
 .color-white {
@@ -158,4 +158,9 @@ ol {
 
 .white-space {
 	white-space: nowrap;
+}
+
+dl,
+dd {
+  margin: 0;
 }
