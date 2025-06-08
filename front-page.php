@@ -289,19 +289,19 @@
 			</div>
 		</section>
 
-		<section class="other-business">
-			<div class="other-business-wrapper">
-				<div class="other-business-body">
-					<div class="other-business-title">Other Business</div>
-					<p class="other-business-text line-height-text">プロが手掛ける「筆文字」「手書きメニュー」を承っております。詳細は下記ボタンよりご覧ください。</p>
-					<p class="other-business-text line-height-text">その他、「たつじん」では飲食店におけるメニュー開発及び改善もご提案しております。</p>
-					<div class="other-business-button botton-white">
+		<section class="top-other-business">
+			<div class="top-other-business-wrapper">
+				<div class="top-other-business-body">
+					<div class="top-other-business-title">Other Business</div>
+					<p class="top-other-business-text line-height-text">プロが手掛ける「筆文字」「手書きメニュー」を承っております。詳細は下記ボタンよりご覧ください。</p>
+					<p class="top-other-business-text line-height-text">その他、「たつじん」では飲食店におけるメニュー開発及び改善もご提案しております。</p>
+					<div class="top-other-business-button botton-white">
 						<a href="<?php echo esc_url(home_url('/other-business/')); ?>">
 							Coming Soon
 						</a>
 					</div>
 				</div>
-				<div class="other-business-img-content">
+				<div class="top-other-business-img-content">
 					<img src="<?php echo get_template_directory_uri(); ?>/images/assets/other-business-img.png" alt="ビジネスサンプル">
 					<!-- 
 					<img src="<?php echo get_template_directory_uri(); ?>/images/assets/other-business01.png" alt="メニュー">
@@ -311,16 +311,16 @@
 			</div>
 		</section>
 
-		<section class="company">
-			<div class="company-wrapper">
-				<div class="company-img">
+		<section class="top-company">
+			<div class="top-company-wrapper">
+				<div class="top-company-img">
 					<img src="<?php echo get_template_directory_uri(); ?>/images/assets/company-img.jpg" alt="外装">
 				</div>
-				<div class="company-body">
-					<div class="company-logo">
+				<div class="top-company-body">
+					<div class="top-company-logo">
 						<img src="<?php echo get_template_directory_uri(); ?>/images/assets/logo-black.svg" alt="ロゴ">
 					</div>
-					<div class="company-button botton-black">
+					<div class="top-company-button botton-black">
 						<a href="<?php echo esc_url(home_url('/company/')); ?>">
 							運営会社情報
 						</a>
@@ -329,24 +329,24 @@
 			</div>
 		</section>
 
-		<section class="recruit">
-			<div class="recruit-wrapper contents-wrapper">
-				<div class="recruit-body">
-					<div class="recruit-title">
-						<p class="recruit-title-top"><span>正</span>社員・<span>ア</span>ルバイト</p>
-						<p class="recruit-title-bottom">積極採用中</p>
+		<section class="top-recruit">
+			<div class="top-recruit-wrapper contents-wrapper">
+				<div class="top-recruit-body">
+					<div class="top-recruit-title">
+						<p class="top-recruit-title-top"><span>正</span>社員・<span>ア</span>ルバイト</p>
+						<p class="top-recruit-title-bottom">積極採用中</p>
 					</div>
-					<div class="recruit-text-box">
-						<p class="recruit-text line-height-text">学歴不問・フリーター歓迎！週1〜勤務可能です。服装（ピアス・ネイル・髪型）自由に楽しく働きたい仲間を募集中！</p>
-						<p class="recruit-text line-height-text">また、独立支援も行っているため、独立志向のある方もぜひご相談ください！</p>
+					<div class="top-recruit-text-box">
+						<p class="top-recruit-text line-height-text">学歴不問・フリーター歓迎！週1〜勤務可能です。服装（ピアス・ネイル・髪型）自由に楽しく働きたい仲間を募集中！</p>
+						<p class="top-recruit-text line-height-text">また、独立支援も行っているため、独立志向のある方もぜひご相談ください！</p>
 					</div>
-					<div class="recruit-button botton-white">
+					<div class="top-recruit-button botton-white">
 						<a href="<?php echo esc_url(home_url('/recruit/')); ?>">
 							read more
 						</a>
 					</div>
 				</div>
-				<div class="recruit-img">
+				<div class="top-recruit-img">
 					<img src="<?php echo get_template_directory_uri(); ?>/images/assets/recruit-img.png" alt="リクルートイラスト">
 				</div>
 			</div>

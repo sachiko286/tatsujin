@@ -1,24 +1,18 @@
 		<?php get_header(); ?>
 
 		<section class="sub-fv">
-			<div class="sub-fv-wrapper">
-				<div class="sub-fv-bg">
-					<!-- <video src="" autoplay muted loop playsinline></video> -->
-					<img src="<?php echo get_template_directory_uri(); ?>/images/assets/news-fv.jpg" alt="FV画像">
+			<h1 class="sub-fv-title">
+				news
+			</h1>
+			<div class="fv-content-left pc">
+				<div class="fv-instagram">
+					<a href="https://www.instagram.com/tatsujin_suwa/" target="_blank" rel="noopener noreferrer">
+						<img src="<?php echo get_template_directory_uri(); ?>/images/assets/instagram-icon.svg" alt="LOGO">
+					</a>
 				</div>
-				<div class="sub-fv-title contents-wrapper">
-					<h1 class="sub-fv-title-en">
-						news
-						<span class="sub-fv-title-ja">お知らせ</span>
-					</h1>
-				</div>
+				<P class="fv-copy">© Tatsujin inc. All rights reserved.</P>
 			</div>
 		</section>
-
-
-<!-- パンくず -->
-<?php get_template_part('parts/breadcrumb') ?>
-
 
 
 		<section class="news">

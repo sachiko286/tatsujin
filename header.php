@@ -30,7 +30,7 @@
 	<?php include(dirname(__FILE__) . "/assets/site-data.php"); ?>
 </head>
 
-<body class="body">
+<body class="<?php if (is_front_page()) : ?>body<?php endif; ?>">
 
 	<header class="header js-header">
 		<div class="header-inner <?php if (is_front_page()) : ?>flex-end<?php endif; ?>">
