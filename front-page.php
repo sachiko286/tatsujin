@@ -265,22 +265,22 @@
 			</div>
 		</section>
 
-		<section class="nikai">
-			<div class="contents-wrapper nikai-wrapper">
-				<div class="nikai-body">
-					<div class="nikai-title">
+		<section class="top-nikai">
+			<div class="contents-wrapper top-nikai-wrapper">
+				<div class="top-nikai-body">
+					<div class="top-nikai-title">
 						姉妹店<br>信州みそホルモンNIKAI
 					</div>
-					<div class="nikai-logo">
+					<div class="top-nikai-logo">
 						<img src="<?php echo get_template_directory_uri(); ?>/images/assets/nikai-logo.png" alt="nikaiロゴ">
 					</div>
 				</div>
-				<div class="nikai-img-content">
-					<div class="nikai-img">
+				<div class="top-nikai-img-content">
+					<div class="top-nikai-img">
 						<img src="<?php echo get_template_directory_uri(); ?>/images/assets/nikai-img01.jpg" alt="食材">
 						<img src="<?php echo get_template_directory_uri(); ?>/images/assets/nikai-img02.jpg" alt="nikai入口">
 					</div>
-					<div class="nikai-button botton-black">
+					<div class="top-nikai-button botton-black">
 						<a href="<?php echo esc_url(home_url('/nikai/')); ?>">
 							NIKAIページ
 						</a>

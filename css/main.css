@@ -1379,10 +1379,10 @@ body {
 
 @media screen and (max-width:466px) {}
 
-/*nikai 
+/*top-nikai 
 -----------------------------------------------------------------------------------------*/
 
-.nikai {
+.top-nikai {
 	background-image: url(../images/assets/nikai-bg.jpg);
 	background-position: center;
 	background-size: cover;
@@ -1391,19 +1391,19 @@ body {
 	padding-bottom: 150px;
 }
 
-.nikai-wrapper {
+.top-nikai-wrapper {
 	display: flex;
 	align-items: center;
 	gap: 98px;
 }
 
-.nikai-title {
+.top-nikai-title {
 	font-weight: 700;
 	font-size: 3rem;
 	text-align: center;
 }
 
-.nikai-logo {
+.top-nikai-logo {
 	aspect-ratio: 217 / 221;
 	max-width: 217px;
 	width: 100%;
@@ -1411,51 +1411,51 @@ body {
 	margin-top: 8px;
 }
 
-.nikai-img {
+.top-nikai-img {
 	display: flex;
 }
 
-.nikai-img img {
+.top-nikai-img img {
 	aspect-ratio: 1 / 1;
 	max-width: 265px;
 	width: 50%;
 	height: 100%;
 }
 
-.nikai-img img:first-of-type {
+.top-nikai-img img:first-of-type {
 	margin-top: 35px;
 }
 
-.nikai-button a {
+.top-nikai-button a {
 	margin-inline: auto;
 	margin-top: 24px;
 
 }
 
 @media screen and (max-width:1023px) {
-	.nikai-wrapper {
+	.top-nikai-wrapper {
 		gap: 30px;
 	}
 
-	.nikai-body {
+	.top-nikai-body {
 		width: 80%;
 	}
 
-	.nikai-title {
+	.top-nikai-title {
 		font-size: 2.4rem;
 	}
 
-	.nikai-logo {
+	.top-nikai-logo {
 		max-width: 168px;
 	}
 }
 
 @media screen and (max-width:767px) {
-	.nikai-wrapper {
+	.top-nikai-wrapper {
 		flex-direction: column;
 	}
 
-	.nikai-body {
+	.top-nikai-body {
 		width: 100%;
 	}
 }

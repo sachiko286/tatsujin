@@ -14,25 +14,13 @@
 			</div>
 		</section>
 
-
 		<section class="news">
 			<div class="news-wrapper contents-wrapper fade-in">
+				<h2 class="section-title">
+					お知らせ
+				</h2>
+
 				<div class="news-header-content">
-					<ul class="news-tab-lists">
-						<?php
-						$categories = get_categories();
-						foreach ($categories as $category) :
-							$cat_name = esc_html($category->name);
-							$cat_slug = esc_attr($category->slug);
-							$cat_link = esc_url(get_category_link($category->term_id));
-						?>
-							<li class="news-tab-list">
-								<a href="<?php echo $cat_link; ?>" class="news-item-category <?php echo $cat_slug; ?>">
-									<?php echo $cat_name; ?>
-								</a>
-							</li>
-						<?php endforeach; ?>
-					</ul>
 					<div class="archive-select">
 						<select class="archive-dropdown" name="archive-dropdown" onChange='document.location.href=this.options[this.selectedIndex].value;'>
 							<option value="<?php echo esc_url(home_url('/news/')); ?>">アーカイブ <span class="select-color">All</span></option>
@@ -46,6 +34,8 @@
 					</div>
 				</div>
 
+
+
 				<?php
 				$paged = get_query_var('paged') ? get_query_var('paged') : 1; // ページネーションを使用する場合必要
 				$news_args = array(
@@ -58,35 +48,22 @@
 
 				<?php if ($news_query->have_posts()) : ?>
 					<div class="news-body">
-						<ul class="news-body-lists">
+						<ul class="top-news-items">
 							<?php while ($news_query->have_posts()) : $news_query->the_post(); ?>
-								<li class="news-body-list">
+								<li class="top-news-item news-item">
 									<a href="<?php echo esc_url(get_permalink()); ?>">
-										<div class="news-body-img">
-											<?php if (get_the_post_thumbnail()) : ?>
-												<img src="<?php the_post_thumbnail_url('full'); ?>" alt="<?php the_title_attribute(); ?>">
-											<?php else : ?>
-												<img class="noimage" src="<?php echo esc_url(get_theme_file_uri('/images/assets/noimage.jpg')); ?>" alt="noimage">
-											<?php endif; ?>
+										<div class="news-item-meta">
+											<p class="news-item-date"><?php the_time('Y.m.d'); ?></p>
+											<?php $cat = get_the_category();
+											// var_dump($cat);
+											$cat_name = $cat[0]->cat_name;
+											$cat_color = $cat[0]->slug; ?>
+											<p class="news-item-category <?php echo $cat_color ?>"><?php echo $cat_name ?></p>
 										</div>
-										<div class="news-body-item news-item">
-											<div class="news-item-meta">
-												<p class="news-item-date"><?php the_time('Y.m.d'); ?></p>
-												<?php
-												$cat = get_the_category();
-												if (!empty($cat)) {
-													$cat_name  = $cat[0]->cat_name;
-													$cat_color = $cat[0]->slug;
-													echo '<p class="news-item-category ' . esc_attr($cat_color) . '">' . esc_html($cat_name) . '</p>';
-												}
-												?>
-											</div>
-											<p class="news-item-title"><?php the_title(); ?></p>
-										</div>
+										<p class="news-item-title"><?php the_title(); ?></p>
 									</a>
 								</li>
 							<?php endwhile; ?>
-
 						</ul>
 
 						<div class="pagenavi">
