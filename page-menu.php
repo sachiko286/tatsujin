@@ -103,6 +103,7 @@
 									<p class="course-add-title price-sub-title">追加単品</p>
 									<p class="course-add-memo color-white">※その他お料理はお問合せください</p>
 								</div>
+
 								<div class="course-add-content">
 									<ul class="course-add-box color-white">
 										<li class="course-add-list">
@@ -165,7 +166,10 @@
 									<p class="other-menu-title-small">一品</p>
 								</div>
 							</div>
-							<div class="other-menu-content">
+							<div class="other-menu-title-sp section-title color-white">
+								他一品
+							</div>
+							<div class="other-menu-content contents-wrapper">
 								<div class="other-menu-content-left">
 									<div class="other-menu-item">
 										<div class="price-sub-title">おつまみ</div>
@@ -281,7 +285,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="other-menu-comment color-white">
+							<div class="other-menu-comment color-white contents-wrapper">
 								<p>※価格はすべて税込です</p>
 								<p>※メニュー変更にともない価格が変わることもあります</p>
 							</div>
@@ -561,7 +565,7 @@
 									<dd class="price-fee">605円</dd>
 								</dl>
 								<dl class="price-menu">
-									<dt class="price-title">サワー(ライム・柚子蜜・カルピス・他)</dt>
+									<dt class="price-title">サワー(ライム・柚子蜜・<span class="tb">カルピス・</span>他)</dt>
 									<dd class="price-fee">660円～</dd>
 								</dl>
 								<dl class="price-menu">
@@ -595,7 +599,7 @@
 									<dd class="price-fee">440円</dd>
 								</dl>
 								<dl class="price-menu">
-									<dt class="price-title">コーラ・ジンジャーエール・カルピス・他</dt>
+									<dt class="price-title">コーラ・ジンジャーエール・<span class="tb">カルピス・</span>他</dt>
 									<dd class="price-fee">440円</dd>
 								</dl>
 							</div>

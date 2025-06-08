@@ -26,7 +26,6 @@ section {
 
 	.contents-wrapper-big {
 		max-width: 550px;
-		width: calc(100% - 40px);
 	}
 
 	.contents-wrapper {
@@ -94,7 +93,8 @@ html {
 	}
 }
 
-@media screen and (min-width:1024px) {
+
+@media screen and (max-width:1023px) {
 	.tb {
 		display: none;
 	}
@@ -132,6 +132,11 @@ body {
 	text-align: center;
 }
 
+@media screen and (max-width:1023px) {
+	.section-title {
+		font-size: 3rem;
+	}
+}
 
 
 .botton-black a {
@@ -1745,7 +1750,7 @@ body {
 }
 
 
-/*page-menu
+/*page-menu 
 -----------------------------------------------------------------------------------------*/
 
 .menu-food {
@@ -1781,6 +1786,10 @@ body {
 	width: clamp(18.75rem, -2.234rem + 43.72vw, 38.75rem);
 	top: -24.9333vw;
 	right: 0;
+}
+
+.other-menu-title-sp {
+	display: none;
 }
 
 .course-content {
@@ -1872,6 +1881,7 @@ body {
 .course-add-memo {
 	font-weight: 700;
 	font-size: 1rem;
+	flex-shrink: 0;
 }
 
 .course-add-content {
@@ -1949,8 +1959,9 @@ body {
 .drink-free-memo {
 	font-weight: 800;
 	font-size: 1rem;
-	margin-left: 739px;
 	margin-top: -10px;
+	padding-right: 150px;
+	text-align: right;
 }
 
 .drink-free-read-left,
@@ -1974,6 +1985,179 @@ body {
 	top: 60px;
 	left: 121px;
 }
+
+
+@media screen and (max-width:1240px) {
+
+	.course-rec::before {
+		width: 100px;
+		left: 40%;
+		top: -20px;
+	}
+
+	.course-add-content {
+		gap: 20px;
+	}
+
+	.course-add-menu {
+		font-size: 0.875rem;
+	}
+
+	.course-add-menu span+span {
+		margin-left: 18px;
+	}
+
+	.drink-free-title {
+		font-size: 6rem;
+		padding-top: 400px
+	}
+
+}
+
+@media screen and (max-width:1023px) {
+	.menu-food-title {
+		padding-top: 100px;
+	}
+
+	.course-box {
+		gap: 30px;
+	}
+
+	.course-text-box {
+		margin-top: 20px;
+	}
+
+	.course-img {
+		width: 40%;
+	}
+
+	.course-box+.course-box {
+		margin-top: 50px;
+	}
+
+	.course-add-content {
+		grid-template-columns: repeat(2, 1fr);
+		row-gap: 40px;
+	}
+
+	.course-title {
+		font-size: 1.8rem;
+	}
+
+	.drink-free-wrapper {
+		height: 400px;
+	}
+
+	.drink-free-read-left,
+	.drink-free-read-right {
+		font-size: 1rem;
+		letter-spacing: 0.2em;
+	}
+
+	.drink-free-read-left {
+		top: 150px;
+	}
+
+	.drink-free-title {
+		padding-top: 220px;
+		font-size: 4rem;
+	}
+
+	.drink-free-memo {
+		padding-right: 40px;
+	}
+}
+
+@media screen and (max-width:767px) {
+
+	.menu-food {
+		background-size: cover;
+	}
+
+	.course-content {
+		margin-top: 50px;
+	}
+
+	.course-header-img {
+		width: 113px;
+		top: -168px;
+	}
+
+	.course-header-title {
+		font-size: 5.5rem;
+	}
+
+	.course-box,
+	.course-box:nth-child(even) {
+		flex-direction: column;
+	}
+
+	.course-box {
+		gap: 20px;
+	}
+
+	.course-img,
+	.course-body {
+		width: 100%;
+	}
+
+	.course-rec::before {
+		left: -25px;
+		top: -35px;
+	}
+
+	.course-header {
+		flex-direction: column;
+		gap: 10px;
+		margin-top: 50px;
+	}
+
+	.course-add-content {
+		grid-template-columns: repeat(1, 1fr);
+		row-gap: 30px;
+		margin-top: 30px;
+	}
+
+	.drink-free-read-left,
+	.drink-free-read-right {
+		display: none;
+	}
+
+	.drink-free {
+		margin-top: 50px;
+	}
+
+	.drink-free-wrapper {
+		height: 250px;
+	}
+
+	.drink-free-title {
+		margin-left: auto;
+		font-size: 3rem;
+		width: fit-content;
+		padding-right: 10px;
+		padding-top: 130px;
+	}
+
+	.drink-free-title span {
+		margin-left: 50px;
+		padding-right: 10px;
+
+	}
+
+	.drink-free-memo {
+		padding-right: 10px;
+	}
+
+
+
+}
+
+
+
+/*page-menu  .other-menu
+-----------------------------------------------------------------------------------------*/
+
 
 .other-menu {
 	padding-top: 100px;
@@ -1999,14 +2183,14 @@ body {
 
 .other-menu-title-big {
 	font-weight: 400;
-	font-size: 25rem;
+	font-size: clamp(12rem, -1.639rem + 28.42vw, 25rem);
 	margin-left: -24px;
 	margin-top: -140px;
 }
 
 .other-menu-title-small {
 	font-weight: 400;
-	font-size: 8rem;
+	font-size: clamp(5rem, 1.852rem + 6.56vw, 8rem);
 	text-align: center;
 	margin-top: -130px;
 }
@@ -2038,8 +2222,6 @@ body {
 	margin-top: 74px;
 }
 
-.price-sub-title {}
-
 .price-menu {
 	display: flex;
 	justify-content: space-between;
@@ -2061,7 +2243,7 @@ body {
 .price-fee {
 	font-weight: 700;
 	font-size: 1rem;
-	margin-left: 50px;
+	/* margin-left: 50px; */
 	padding-top: 17px;
 	padding-bottom: 5px;
 }
@@ -2074,7 +2256,65 @@ body {
 	margin-inline: auto;
 }
 
+@media screen and (max-width:1439px) {
 
+	.other-menu-title-big {
+		margin-top: -120px;
+	}
+
+	.other-menu-title-small {
+		margin-top: -90px;
+	}
+}
+
+@media screen and (max-width:1023px) {
+
+	.other-menu-title-big {
+		margin-top: -80px;
+	}
+
+	.other-menu-title-small {
+		margin-top: -70px;
+	}
+
+	.other-menu-content,
+	.menu-drink-content {
+		gap: 40px;
+	}
+
+	.price-title {
+		font-size: 0.875rem;
+	}
+
+}
+
+@media screen and (max-width:767px) {
+	.other-menu {
+		padding-top: 50px;
+	}
+
+	.other-menu-header {
+		display: none;
+	}
+
+	.other-menu-title-sp {
+		display: block;
+	}
+
+	.other-menu-content {
+		margin-top: 30px;
+		flex-direction: column;
+	}
+
+	.other-menu-item-mt,
+	.menu-drink-item-mt {
+		margin-top: 40px;
+	}
+}
+
+
+/*page-menu  .menu-drink
+-----------------------------------------------------------------------------------------*/
 
 .menu-drink {
 	background-image: url(../images/assets/drink-menu-bg.jpg);
@@ -2083,7 +2323,6 @@ body {
 	background-repeat: no-repeat;
 }
 
-.contents-wrapper {}
 
 .menu-drink-header {
 	display: flex;
@@ -2093,7 +2332,7 @@ body {
 
 .menu-drink-header-text {
 	font-weight: 400;
-	font-size: 21.875rem;
+	font-size: clamp(17rem, 11.885rem + 10.66vw, 21.875rem);
 	position: relative;
 	z-index: 10;
 }
@@ -2101,7 +2340,7 @@ body {
 .menu-drink-header-text::before {
 	content: "";
 	aspect-ratio: 1 / 1;
-	max-width: 242px;
+	max-width: clamp(12.188rem, 9.106rem + 6.42vw, 15.125rem);
 	width: 100%;
 	background: rgba(173, 2, 12, 1);
 	border-radius: 50%;
@@ -2177,11 +2416,11 @@ body {
 
 .sake-choice-title {
 	font-weight: 400;
-	font-size: 2.25rem;
+	font-size: clamp(1.8rem, 0.45rem + 2.81vw, 2.25rem);
 }
 
 .sake-choice-text {
-	margin-top: 71px;
+	margin-top: clamp(1.875rem, -5.813rem + 16.02vw, 4.438rem);
 	max-width: 350px;
 	width: 100%;
 	font-weight: 700;
@@ -2241,7 +2480,17 @@ body {
 	margin-top: 10px;
 }
 
+@media screen and (max-width:1023px) {
+	.shochu-text {
+		font-size: 0.875rem;
+	}
+}
 
+@media screen and (max-width:767px) {
+.menu-drink-header-text {
+	font-size: 10rem;
+}
+}
 
 
 /*campaign 
@@ -3436,6 +3685,15 @@ body {
 
 	.fv-copy {
 		margin-top: 40px;
+	}
+}
+
+@media screen and (max-width:1023px) {
+	.sub-fv {
+		.fv-content-left {
+			position: absolute;
+			top: 130px;
+		}
 	}
 }
 
