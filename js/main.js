@@ -165,38 +165,38 @@ $(function () {
   // });
 
   $(function () {
-  const $pageTop = $("#js-pagetop");
-  const $footer = $(".footer-bottom");
+    const $pageTop = $("#js-pagetop");
+    const $footer = $(".footer-bottom");
 
-  $(window).on("scroll resize", function () {
-    const scrollTop = $(window).scrollTop();
-    const windowHeight = $(window).height();
-    const footerTop = $footer.offset().top;
+    $(window).on("scroll resize", function () {
+      const scrollTop = $(window).scrollTop();
+      const windowHeight = $(window).height();
+      const footerTop = $footer.offset().top;
 
-    // 表示切り替え
-    if (scrollTop > 1) {
-      $pageTop.fadeIn(300).css('display', 'flex');
-    } else {
-      $pageTop.fadeOut(300);
-    }
+      // 表示切り替え
+      if (scrollTop > 1) {
+        $pageTop.fadeIn(300).css('display', 'flex');
+      } else {
+        $pageTop.fadeOut(300);
+      }
 
-    // footerとの重なり回避
-    const pageTopHeight = $pageTop.outerHeight();
-    const pageBottomPos = scrollTop + windowHeight;
-    const overlap = pageBottomPos > footerTop;
+      // footerとの重なり回避
+      const pageTopHeight = $pageTop.outerHeight();
+      const pageBottomPos = scrollTop + windowHeight;
+      const overlap = pageBottomPos > footerTop;
 
-    if (overlap) {
-      const offset = pageBottomPos - footerTop;
-      $pageTop.css("bottom", 20 + offset); // 下にずらす
-    } else {
-      $pageTop.css("bottom", 20); // 通常位置
-    }
+      if (overlap) {
+        const offset = pageBottomPos - footerTop;
+        $pageTop.css("bottom", 20 + offset); // 下にずらす
+      } else {
+        $pageTop.css("bottom", 20); // 通常位置
+      }
+    });
+
+    $pageTop.click(function () {
+      $("html, body").animate({ scrollTop: 0 }, 300);
+    });
   });
-
-  $pageTop.click(function () {
-    $("html, body").animate({ scrollTop: 0 }, 300);
-  });
-});
 
 
 

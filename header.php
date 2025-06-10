@@ -34,11 +34,11 @@
 
 	<header class="header js-header <?php if (is_single()) : ?>header-bg<?php endif; ?>">
 		<div class="header-inner <?php if (is_front_page()) : ?>flex-end<?php endif; ?>">
-			<h1 class="header-logo <?php if (is_front_page()) : ?>header-none<?php endif; ?>">
+			<div class="header-logo <?php if (is_front_page()) : ?>header-none<?php endif; ?>">
 				<a href="<?php echo esc_url(home_url('/')); ?>">
 					<img src="<?php echo get_template_directory_uri(); ?>/images/assets/logo.svg" alt="ロゴ">
 				</a>
-			</h1>
+			</div>
 			<nav class="header-nav">
 				<div class="header-nav-contact-icon-sp">
 					<a href="tel:0266-72-5669">

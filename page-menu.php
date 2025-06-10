@@ -19,27 +19,27 @@
 
 			<section class="menu-food">
 				<div class="contents-wrapper-big">
-					<div class="menu-food-title section-title color-white">
+					<h2 class="menu-food-title section-title color-white fade-in">
 						お品書き
-					</div>
+					</h2>
 					<div class="course">
-						<div class="course-header">
-							<div class="course-header-title color-white">
+						<div class="course-header fade-in">
+							<h3 class="course-header-title color-white">
 								やきとり<br>コース
-							</div>
+							</h3>
 							<div class="course-header-img">
 								<img src="<?php echo get_template_directory_uri(); ?>/images/assets/course-header-img.png" alt="LOGO">
 							</div>
 						</div>
-						<div class="course-content contents-wrapper">
+						<div class="course-content contents-wrapper fade-in">
 							<div class="course-box">
 								<div class="course-img">
 									<img src="<?php echo get_template_directory_uri(); ?>/images/assets/course01.jpg" alt="3300円コース">
 								</div>
 								<div class="course-body color-white">
-									<h3 class="course-title">
+									<h4 class="course-title">
 										3,300円コース<span>(税込)</span>
-									</h3>
+									</h4>
 									<div class="course-text-box">
 										<p class="course-text">串焼き六種</p>
 										<p class="course-text">前菜</p>
@@ -53,9 +53,9 @@
 									<img src="<?php echo get_template_directory_uri(); ?>/images/assets/course02.jpg" alt="4400円コース">
 								</div>
 								<div class="course-body color-white">
-									<h3 class="course-title">
+									<h4 class="course-title">
 										4,400円コース<span>(税込)</span>
-									</h3>
+									</h4>
 									<div class="course-text-box">
 										<p class="course-text">3,300円コース<span>+</span></p>
 										<p class="course-text">日替わり一品</p>
@@ -69,9 +69,9 @@
 									<img src="<?php echo get_template_directory_uri(); ?>/images/assets/course03.jpg" alt="5500円コース">
 								</div>
 								<div class="course-body color-white">
-									<h3 class="course-title">
+									<h4 class="course-title">
 										5,500円コース<span>(税込)</span>
-									</h3>
+									</h4>
 									<div class="course-text-box">
 										<p class="course-text">4,400円コース<span>+</span></p>
 										<p class="course-text">お造り</p>
@@ -83,9 +83,9 @@
 									<img src="<?php echo get_template_directory_uri(); ?>/images/assets/course04.jpg" alt="6600円コース">
 								</div>
 								<div class="course-body color-white">
-									<h3 class="course-title">
+									<h4 class="course-title">
 										6,600円コース<span>(税込)</span><span class="reservation">※要予約</span>
-									</h3>
+									</h4>
 									<div class="course-text-box">
 										<p class="course-text">串焼き六種</p>
 										<p class="course-text">出汁キャベツ</p>
@@ -98,9 +98,9 @@
 									</div>
 								</div>
 							</div>
-							<div class="course-add">
+							<div class="course-add fade-in">
 								<div class="course-header">
-									<p class="course-add-title price-sub-title">追加単品</p>
+									<h3 class="course-add-title price-sub-title">追加単品</h3>
 									<p class="course-add-memo color-white">※その他お料理はお問合せください</p>
 								</div>
 
@@ -145,7 +145,7 @@
 									</ul>
 								</div>
 							</div>
-							<div class="drink-free">
+							<div class="drink-free fade-in">
 								<div class="drink-free-wrapper contents-wrapper color-white">
 									<p class="drink-free-title">drink <span>Free Flow</span></p>
 									<P class="drink-free-memo">※詳しくはスタッフまでお問合せください</P>
@@ -157,19 +157,19 @@
 					</div>
 					<div class="other-menu">
 						<div class="other-menu-wrapper">
-							<div class="other-menu-header">
+							<div class="other-menu-header fade-in">
 								<div class="other-menu-img">
 									<img src="<?php echo get_template_directory_uri(); ?>/images/assets/others.jpg" alt="LOGO">
 								</div>
-								<div class="other-menu-title color-white">
-									<p class="other-menu-title-big">他</p>
-									<p class="other-menu-title-small">一品</p>
-								</div>
+								<h2 class="other-menu-title color-white">
+									<span class="other-menu-title-big">他</span>
+									<span class="other-menu-title-small">一品</span>
+								</h2>
 							</div>
 							<div class="other-menu-title-sp section-title color-white">
 								他一品
 							</div>
-							<div class="other-menu-content contents-wrapper">
+							<div class="other-menu-content contents-wrapper fade-in">
 								<div class="other-menu-content-left">
 									<div class="other-menu-item">
 										<div class="price-sub-title">おつまみ</div>
@@ -306,13 +306,13 @@
 
 			<section class="menu-drink">
 				<div class="contents-wrapper">
-					<div class="menu-drink-header">
+					<div class="menu-drink-header fade-in">
 						<p class="menu-drink-header-text">酒</p>
 						<div class="menu-drink-header-img">
 							<img src="<?php echo get_template_directory_uri(); ?>/images/assets/menu-sake.jpg" alt="酒">
 						</div>
 					</div>
-					<div class="sake-brewery">
+					<div class="sake-brewery fade-in">
 						<p class="sake-brewery-map-title">酒蔵MAP</p>
 						<p class="sake-brewery-map-text">ラベルを押して酒蔵ページへ</p>
 						<ul class="sake-brewery-labels">
@@ -363,7 +363,7 @@
 							</li>
 						</ul>
 					</div>
-					<div class="sake-choice">
+					<div class="sake-choice fade-in">
 						<div class="sake-choice-img">
 							<img src="<?php echo get_template_directory_uri(); ?>/images/assets/sake-choice-img.png" alt="酒">
 						</div>
@@ -372,13 +372,13 @@
 							<p class="sake-choice-text">厳選された諏訪地域九蔵のお酒のほかにもワインやウイスキー・焼酎などはもちろん、ノンアルカクテル・ソフトドリンクまで豊富なメニューをご用意しております。</p>
 						</div>
 					</div>
-					<div class="menu-drink-title section-title">
+					<h2 class="menu-drink-title section-title fade-in">
 						お飲み物
-					</div>
-					<div class="menu-drink-content">
+					</h2>
+					<div class="menu-drink-content fade-in">
 						<div class="menu-drink-content-left">
 							<div class="menu-drink-item">
-								<div class="price-sub-title">ビール</div>
+								<h3 class="price-sub-title">ビール</h3>
 								<dl class="price-menu">
 									<dt class="price-title">アサヒプレミアム生ビール</dt>
 									<dd class="price-fee">825円</dd>
@@ -393,7 +393,7 @@
 								</dl>
 							</div>
 							<div class="menu-drink-item menu-drink-item-mt">
-								<div class="price-sub-title">ワイン</div>
+								<h3 class="price-sub-title">ワイン</h3>
 								<dl class="price-menu">
 									<dt class="price-title">アルプス葡萄棚棚(グラス)</dt>
 									<dd class="price-fee">660円</dd>
@@ -436,7 +436,7 @@
 								</dl>
 							</div>
 							<div class="menu-drink-item menu-drink-item-mt">
-								<div class="price-sub-title">焼酎</div>
+								<h3 class="price-sub-title">焼酎</h3>
 								<div class="price-shochu">
 									<div class="shochu-name">
 										<dl class="price-menu">
@@ -466,7 +466,7 @@
 								</div>
 							</div>
 							<div class="menu-drink-item menu-drink-item-mt">
-								<div class="price-sub-title">本格果実酒</div>
+								<h3 class="price-sub-title">本格果実酒</h3>
 								<dl class="price-menu">
 									<dt class="price-title">真澄(梅酒・ゆず酒)</dt>
 									<dd class="price-fee">770円</dd>
@@ -498,7 +498,7 @@
 						</div>
 						<div class="menu-drink-content-right">
 							<div class="menu-drink-item">
-								<div class="price-sub-title">日本酒</div>
+								<h3 class="price-sub-title">日本酒</h3>
 								<dl class="price-menu">
 									<dt class="price-title">真澄</dt>
 									<dd class="price-fee">803円～</dd>
@@ -552,7 +552,7 @@
 								</dl>
 							</div>
 							<div class="menu-drink-item menu-drink-item-mt">
-								<div class="price-sub-title">サワー</div>
+								<h3 class="price-sub-title">サワー</h3>
 								<dl class="price-menu">
 									<dt class="price-title">チューハイ</dt>
 									<dd class="price-fee">495円</dd>
@@ -579,7 +579,7 @@
 								</dl>
 							</div>
 							<div class="menu-drink-item menu-drink-item-mt">
-								<div class="price-sub-title">カクテル</div>
+								<h3 class="price-sub-title">カクテル</h3>
 								<dl class="price-menu">
 									<dt class="price-title">カシス(ソーダ・ウーロン)</dt>
 									<dd class="price-fee">660円</dd>
