@@ -436,27 +436,13 @@ div.error-message {
 	}
 }
 
-.footer-contact-seat {
-	font-weight: 500;
-	font-size: 1rem;
-	color: rgba(255, 255, 255, 1);
-	margin-top: 9px;
-	letter-spacing: 0.2em;
-}
-
-.footer-contact-parking {
-	font-weight: 500;
-	font-size: 1rem;
-	color: rgba(255, 255, 255, 1);
-	letter-spacing: 0.2em;
-}
-
+.footer-contact-seat,
+.footer-contact-parking,
 .footer-contact-payment {
-	font-weight: 500;
-	font-size: 1rem;
 	color: rgba(255, 255, 255, 1);
-	letter-spacing: 0.2em;
 }
+
+
 
 .footer-contact-button {
 	margin-top: 16px;

@@ -2802,194 +2802,248 @@ body {
 
 
 
-/*campaign 
+/*contact
 -----------------------------------------------------------------------------------------*/
+.contact-tel-content {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.contact-tel-body {
+	width: 486px;
+	/* flex-shrink: 0; */
+}
+
+.contact-tel-title {
+	font-weight: 500;
+	font-size: 2.25rem;
+	color: rgba(255, 153, 0, 1);
+}
+
+.contact-tel-text {
+	font-weight: 400;
+	font-size: 1.25rem;
+	line-height: 2;
+}
+
+.contact-number-body {
+	width: 50%;
+}
+.contact-number-body a {
+	max-width: 600px;
+	background: rgba(173, 2, 12, 1);
+	color: rgb(255, 255, 255);
+	display: flex;
+	align-items: center;
+	gap: clamp(0.625rem, -2.326rem + 6.15vw, 3.438rem);
+	justify-content: center;
+	padding: 37px 0;
+}
+
+.tel-link {
+	pointer-events: none; /* クリック無効化 */
+}
+
+.contact-seat {
+	font-weight: 500;
+	font-size: 1rem;
+	margin-top: 9px;
+	letter-spacing: 0.2em;
+}
+
+.contact-parking {
+	font-weight: 500;
+	font-size: 1rem;
+	letter-spacing: 0.2em;
+}
+
+.contact-payment {
+	font-weight: 500;
+	font-size: 1rem;
+	letter-spacing: 0.2em;
+}
+
+.contact-number-icon {
+	width: clamp(1.75rem, 0.701rem + 2.19vw, 2.75rem);
+	margin-bottom: clamp(1.125rem, -0.055rem + 2.46vw, 2.25rem);
+}
+
+.contact-number-box {
+	display: inline;
+}
+
+.contact-number-tel {
+	font-weight: 500;
+	font-size: clamp(2rem, -0.098rem + 4.37vw, 4rem);
+	white-space: nowrap;
+}
+
+.contact-number-time {
+	display: block;
+	font-size: clamp(1rem, -0.049rem + 2.19vw, 2rem);
+	white-space: nowrap;
+	text-align-last: justify;
+}
+
+@media screen and (max-width:1439px) {
+	.contact-number-body {
+		width: 46%;
+	}
+}
+
+@media screen and (max-width:1023px) {
+	.contact-seat,
+	.contact-parking,
+	.contact-payment {
+		letter-spacing: 0;
+	}
+
+	.contact-number-body a {
+		padding: 30px 0;
+	}
+}
+
+@media screen and (max-width:767px) {
+	.contact {
+		padding-top: 0;
+	}
+.contact-tel-content {
+	flex-direction: column;
+}
+
+.contact-tel-body {
+	width: auto;
+}
+
+.contact-tel-title {
+	text-align: center;
+}
+
+.contact-tel-text {
+	line-height: 1.5;
+	margin-top: 10px;
+}
+.contact-number-body {
+	width: 100%;
+	max-width: 360px;
+	margin-top: 30px;
+}
+
+.contact-number-tel {
+	font-size: 2.5rem;
+}
+
+.contact-number-time {
+	font-size: 1.25rem;
+}
+
+.tel-link {
+	pointer-events: auto;
+}
+}
 
 /*form
 -----------------------------------------------------------------------------------------*/
 .form {
-	text-align: left;
+	background-image: url(../images/assets/contact-bg.jpg);
+	background-position: center;
+	background-size: auto;
+	background-repeat: no-repeat;
 }
 
 .form-container {
 	margin-top: 50px;
 }
 
-.contact-form,
-.entry-form {
-	margin-top: 50px;
-}
-
-.form-checkbox {
-	text-align: left;
-}
-
-.form-checkbox label {
-	display: inline-block;
-}
-
-.form-checkbox label:not(:first-of-type) {
-	margin-top: 0;
-	margin-left: 35px;
-}
-
-.form-checkbox input {
-	opacity: 0;
-}
-
-.form-checkbox label {
-	cursor: pointer;
-	display: inline-block;
-	position: relative;
-	font-family: Noto Sans JP;
-	font-weight: 500;
-	font-size: 1rem;
-	line-height: 1.2;
-	letter-spacing: 0.05em;
-	color: rgb(62, 62, 62);
-
-}
-
-.form-checkbox input+span::before {
-	content: "";
-	position: absolute;
-	top: 50%;
-	left: 0;
-	transform: translateY(-50%);
-	background: #fff;
-	border: 1px solid #ccc;
-	display: block;
-	width: 21px;
-	height: 21px;
-}
-
-.form-checkbox input+span::after {
-	content: "";
-	margin-top: 2px;
-	position: absolute;
-	top: 20%;
-	left: 2px;
-	transform: translateY(-50%) rotate(-45deg);
-	display: block;
-	width: 15px;
-	height: 8px;
-	border-bottom: 3px solid #000;
-	border-left: 3px solid #000;
-	transition: .3s;
-	opacity: 0;
-}
-
-.form-checkbox label:not(:first-of-type) {
-	margin-left: 10px;
-}
-
-/* コンタクトフォーム７調整 */
-.wpcf7-list-item-label {
-	margin-left: 10px;
-}
-
-/* コンタクトフォーム７調整 */
-.wpcf7-list-item.first {
-	margin-left: 0;
-}
-
-/* コンタクトフォーム７調整 */
-.wpcf7-spinner {
-	display: none;
-}
-
-/* コンタクトフォーム７調整 */
-.form-wrap-content.form-file {
-	flex-direction: column;
-	gap: 0;
-}
-
-/* コンタクトフォーム７調整 */
-.form-wrap-content.form-file input {
-	background: none;
-	padding: 0;
-	border: none;
-	border-radius: 0;
+.form-wrapper {
+	max-width: 900px;
 	width: 100%;
+	margin-inline: auto;
 }
 
-/* コンタクトフォーム７調整 */
-@media screen and (max-width:450px) {
-	.wpcf7-list-item {
-		display: block;
-		margin-left: 0;
-	}
-
-	.wpcf7-list-item+.wpcf7-list-item {
-		margin-top: 10px;
-	}
+.form-title {
+	font-weight: 500;
+	font-size: clamp(3rem, 1.951rem + 2.19vw, 4rem);
+	text-align: center;
 }
 
-
-.entry ::placeholder {
-	color: rgb(162, 162, 162);
-	;
+.form-read {
+	font-weight: 500;
+	font-size: clamp(1.75rem, 1.225rem + 1.09vw, 2.25rem);
+	margin-top: 41px;
+	text-align: center;
 }
 
-.form-checkbox input:checked+span::after {
-	opacity: 1;
-}
-
-.form-wrap+.form-wrap {
+.form-content {
 	margin-top: 35px;
 }
 
-.form-wrap-title {
-	text-align: left;
+
+.form-wrap+.form-wrap {
+	margin-top: 30px;
 }
+
+.form-wrap {
+	display: flex;
+	align-items: center;
+}
+
+.form-wrap-title {
+	width: 280px;
+	flex-shrink: 0;
+}
+
+.form-wrap:nth-of-type(7) .form-wrap-title {
+	align-self: flex-start;
+	margin-top: 10px;
+}
+
+.title-top {
+		align-self: flex-start;
+	margin-top: 10px;
+}
+
+.form-label-mark {
+	font-weight: 400;
+	font-size: 1rem;
+	width: 68px;
+	padding: 0 0 1px 0;
+	background: rgba(255, 153, 0, 1);
+	border-radius: 2px;
+	display: inline-block;
+	text-align: center;
+	margin-right: 17px;
+
+}
+
+.norequired {
+	color: rgba(85, 85, 85, 1);
+	background: rgba(255, 255, 255, 1);
+}
+
 
 .form-label-item {
-	font-family: Noto Sans JP;
-	font-weight: 500;
-	font-size: 1rem;
-	line-height: 1.2;
-	letter-spacing: 0.05em;
-	color: rgb(62, 62, 62);
+	font-weight: 400;
+	font-size: 1.25rem;
 }
 
-.form-label-required {
-	font-family: Noto Sans JP;
-	font-weight: 350;
-	font-size: 0.75rem;
-	line-height: 1.125;
-	letter-spacing: 0.05em;
-	color: rgb(222, 0, 0);
-	position: relative;
-	top: -5px;
-}
 
-.form-label-required span {
-	font-weight: 500;
-	font-size: 1rem;
-	line-height: 1.5;
-	position: relative;
-	top: 5px;
-
-}
 
 .form-wrap-content {
-	display: flex;
-	gap: 39px;
-	margin-top: 10px;
-	text-align: left;
+	max-width: 620px;
+	width: 100%;
 }
 
 .form-wrap-content input {
-	padding: 16px 40px;
+	padding: 10px 20px;
 	border: none;
-	border-radius: 10px;
-	background: rgb(240, 240, 240);
+	border-radius: 5px;
+	background: rgba(255, 255, 255, 1);
 	width: 100%;
-
-}
-
-.form-input-half {
-	width: 100%;
+	font-family: Shippori Mincho;
+	font-weight: 400;
+	font-size: 1.25rem;
 }
 
 .form-input-text {
@@ -3005,74 +3059,51 @@ body {
 .form-input-textarea textarea {
 	width: 100%;
 	border: none;
-	padding: 16px 40px;
+	padding: 10px 20px;
 	border: none;
 	border-radius: 10px;
-	background: rgb(240, 240, 240);
-	height: 240px;
-}
-
-.form-file-button {
-	width: 119px;
-	height: 45px;
-	border-radius: 10px;
-	padding-top: 11px;
-	padding-right: 40px;
-	padding-bottom: 11px;
-	padding-left: 40px;
-	background: rgb(240, 240, 240);
-	color: rgb(162, 162, 162);
-	font-family: Noto Sans JP;
+	background: rgba(255, 255, 255, 1);
+	height: 200px;
+	font-family: Shippori Mincho;
 	font-weight: 400;
-	font-size: 1rem;
-	line-height: 1;
-	letter-spacing: 0.05em;
-}
-
-.form-file-text {
-	font-family: Noto Sans JP;
-	font-weight: 400;
-	font-size: 1rem;
-	line-height: 1;
-	letter-spacing: 0.05em;
-	color: rgb(162, 162, 162);
-	margin-top: 10px;
-	margin-left: 20px;
+	font-size: 1.25rem;
 }
 
 .form-recaptcha {
 	font-family: Noto Sans JP;
 	font-weight: 400;
-	font-size: 0.875rem;
-	line-height: 1.5rem;
-	letter-spacing: 0.05em;
-	color: rgb(62, 62, 62);
+	font-size: 1.25rem;
 	text-align: left;
 	margin-top: 50px;
+	display: flex;
+	justify-content: center;
+	gap: 74px;
 
 }
 
-.form-recaptcha a {
+.form-recaptcha-text {
+	max-width: 572px;
+}
+
+.form-recaptcha-text a {
 	text-decoration: underline;
-	color: rgb(62, 62, 62);
+	color: rgba(255, 255, 255, 1);
 }
 
 .form-button {
-	margin-top: 150px;
+	margin-top: 100px;
 	text-align: center;
 }
 
 .form-button input {
 	border: none;
-	width: 341px;
-	padding: 20px 0;
-	background: rgb(0, 173, 130);
+	width: 328px;
+	padding: 23px 0;
+	background: rgba(173, 2, 12, 1);
 	color: rgb(255, 255, 255);
-	font-family: Noto Sans JP;
-	font-weight: 500;
-	font-size: 1.5rem;
-	line-height: 1.2;
-	letter-spacing: 0.05em;
+	font-family: Shippori Mincho;
+	font-weight: 400;
+	font-size: 2rem;
 	cursor: pointer;
 	transition: all 0.3s;
 }
@@ -3081,38 +3112,63 @@ body {
 	opacity: 0.6;
 }
 
-.form-button button {
-	border: none;
-	width: 341px;
-	padding: 20px 0;
-	background: rgb(0, 173, 130);
-	color: rgb(255, 255, 255);
-	font-family: Noto Sans JP;
-	font-weight: 500;
-	font-size: 1.5rem;
-	line-height: 1.2;
-	letter-spacing: 0.05em;
-	cursor: pointer;
-	transition: all 0.3s;
-}
-
-.form-button button :hover {
-	opacity: 0.6;
+/* コンタクトフォーム７調整 */
+.wpcf7-spinner {
+	display: none;
 }
 
 @media screen and (max-width:1023px) {
+.form-wrap-title {
+	width: 245px;
+}
+	.form-label-mark {
+		width: 50px;
+		margin-right: 8px;
+	}
 	.form-button {
 		margin-top: 100px;
 	}
+
+	.form-recaptcha {
+		font-size: 1rem;
+		flex-direction: column;
+		gap: 10px;
+	}
+
+	.form-recaptcha-title {
+		text-align: center;
+	}
+	
+	.form-recaptcha-text {
+		max-width: 650px;
+		margin-inline: auto;
+	}
+
+	.form-button input {
+	width: 280px;
+	padding: 23px 0;
+	font-size: 1.5rem;
+}
 }
 
 
 @media screen and (max-width:767px) {
+.form-read {
+	font-size: 1.5rem;
+	margin-top: 30px;
+}
+
+	.form-wrap {
+		flex-direction: column;
+	}
+	.form-wrap-title {
+		width: 100%;
+	}
 
 	.form-wrap-content input,
 	.form-input-textarea textarea {
-		padding: 14px 15px;
-		border-radius: 6px;
+		padding: 5px 10px;
+		margin-top: 10px;
 	}
 
 	.form-wrap-content {
@@ -3194,273 +3250,8 @@ body {
 
 
 
-/*page-about facility設備紹介
------------------------------------------------------------------------------------------*/
-.facility {
-	background-image: url(../images/assets/facility-bg.jpg);
-	background-position: center;
-	background-size: 100% 100%;
-	background-repeat: no-repeat;
-	margin-top: 200px;
-}
-
-.facility-content-wrapper {
-	margin-top: 90px;
-}
-
-.facility-content {
-	display: flex;
-	gap: clamp(1.875rem, -2.625rem + 9.38vw, 6.75rem);
-	/* 30-108:768-1600 */
-	align-items: center;
-}
-
-.facility-content:nth-of-type(even) {
-	flex-direction: row-reverse;
-}
-
-.facility-content+.facility-content {
-	margin-top: clamp(4.375rem, 1.49rem + 6.01vw, 7.5rem);
-	/* 70-120:768-1600 */
-}
-
-.facility-img-box {
-	max-width: 660px;
-	width: 44%;
-	border-radius: clamp(0.938rem, 0.649rem + 0.6vw, 1.25rem);
-	/* 15-20:768-1600 */
-	aspect-ratio: 660 / 328;
-	height: 100%;
-	padding-right: 20px;
-
-}
-
-.facility-img {
-	position: relative;
-	height: inherit;
-}
-
-.facility-img img {
-	position: relative;
-	z-index: 2;
-	border-radius: clamp(0.938rem, 0.649rem + 0.6vw, 1.25rem);
-	/* 15-20:768-1600 */
-	height: inherit;
-}
-
-.facility-img::after {
-	content: "";
-	display: inline-block;
-	width: 100%;
-	height: 100%;
-	background: rgba(255, 213, 79, 1);
-	position: absolute;
-	border-radius: clamp(0.938rem, 0.649rem + 0.6vw, 1.25rem);
-	/* 15-20:768-1600 */
-	right: -20px;
-	top: 20px;
-	z-index: 1;
-}
-
-.facility-body {
-	max-width: 579px;
-	width: 38.6%;
-	flex: 1;
-}
-
-.facility-content-title {
-	font-weight: 600;
-	font-size: clamp(1.25rem, 1.019rem + 0.48vw, 1.5rem);
-	/* 20-24:768-1600 */
-	line-height: calc(40 / 24);
-}
-
-.facility-content-text {
-	font-weight: 400;
-	font-size: 1rem;
-	margin-top: clamp(1.25rem, 0.673rem + 1.2vw, 1.875rem);
-	/* 20-30:768-1600 */
-}
-
-@media screen and (max-width:1439px) {
-	.facility {
-		margin-top: 100px;
-		padding-bottom: 100px;
-	}
-}
-
-@media screen and (max-width:1023px) {
-	.facility {
-		margin-top: 80px;
-		padding-bottom: 80px;
-	}
-
-	.facility-img-box {
-		padding-right: 10px;
-	}
-
-	.facility-img::after {
-		right: -10px;
-		top: 10px;
-	}
-}
 
 
-
-@media screen and (max-width:767px) {
-	.facility {
-		padding: 50px 0;
-		margin-top: 0;
-	}
-
-	.facility-content-wrapper {
-		margin-top: 40px;
-	}
-
-
-	.facility-content,
-	.facility-content:nth-of-type(even) {
-		flex-direction: column;
-		gap: 30px;
-	}
-
-	.facility-content+.facility-content {
-		margin-top: 40px;
-	}
-
-	.facility-img-box {
-		width: 100%;
-		max-width: none;
-	}
-
-	.facility-body {
-		width: 100%;
-		max-width: none;
-	}
-
-	.facility-content-text {
-		margin-top: 10px;
-	}
-}
-
-
-/*page-medical-info  dentures-treatment
------------------------------------------------------------------------------------------*/
-.dentures-treatment {
-	padding: 100px 0 150px;
-	background-image: url(../images/assets/dentures-treatment-bg.jpg);
-	background-position: center;
-	background-size: 100% 100%;
-	background-repeat: no-repeat;
-}
-
-.dentures-treatment-title {
-	text-align: center;
-}
-
-.dentures-treatment-content {
-	display: flex;
-	justify-content: space-between;
-	margin-top: 70px;
-	align-items: center;
-}
-
-.dentures-treatment-img {
-	aspect-ratio: 670 / 417;
-	max-width: 670px;
-	/* width: 45%; */
-	min-width: 400px;
-	height: 100%;
-}
-
-.dentures-treatment-img img {
-	height: 100%;
-	object-fit: cover;
-}
-
-.dentures-treatment-body {
-	max-width: 678px;
-	margin-left: 30px;
-	/* width: 50%; */
-	align-self: self-start;
-}
-
-.dentures-treatment-body-title {
-	font-weight: 500;
-	font-size: clamp(1.5rem, 0.577rem + 1.92vw, 2.5rem);
-	/*24-40:768-1600 */
-	/*24-40:768-1600 */
-}
-
-.dentures-treatment-body-text {
-	font-weight: 400;
-	font-size: 16px;
-	text-align: justify;
-	margin-top: 40px;
-	margin-left: 12px;
-}
-
-@media screen and (max-width:1439px) {
-	.dentures-treatment {
-		margin-top: 100px;
-		padding-bottom: 100px;
-	}
-
-
-	.dentures-treatment-body-text {
-		margin-left: 0;
-		margin-top: 20px;
-	}
-
-	.dentures-treatment-img img {
-		height: 100%;
-		border-radius: 15px;
-	}
-}
-
-@media screen and (max-width:1023px) {
-	.dentures-treatment {
-		padding: 80px 0;
-		margin-top: 80px;
-	}
-
-	.dentures-treatment-content {
-		flex-direction: column;
-	}
-
-	.dentures-treatment-img {
-		max-width: 670px;
-		width: 100%;
-		margin-inline: auto;
-		min-width: auto;
-	}
-
-	.dentures-treatment-body {
-		max-width: none;
-		width: 100%;
-		margin-left: 0;
-	}
-
-	.dentures-treatment-body-title {
-		font-size: 26px;
-		margin-top: 20px;
-	}
-
-	.dentures-treatment-body-text {
-		font-size: 16px;
-	}
-}
-
-@media screen and (max-width:767px) {
-	.dentures-treatment {
-		padding: 50px 0;
-		margin-top: 50px;
-	}
-
-	.dentures-treatment-content {
-		margin-top: 30px;
-	}
-}
 
 
 

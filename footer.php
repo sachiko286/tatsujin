@@ -17,7 +17,6 @@
 					<div>
 						<div class="footer-tel header-nav-contact">
 							<a href="<?php echo esc_url(home_url('/contact/')); ?>">
-								<!-- <div class="header-nav-contact-wrapper"> -->
 								<div class="header-nav-contact-icon">
 									<img src="<?php echo get_template_directory_uri(); ?>/images/assets/phone-icon.svg" alt="電話マークアイコン">
 								</div>
@@ -25,13 +24,13 @@
 									<span class="header-nav-tel">0266-78-6543</span>
 									<span class="header-nav-time">営業時間&emsp;18：00〜22：00</span>
 								</div>
-								<!-- </div> -->
 							</a>
 						</div>
 					</div>
-					<p class="footer-contact-seat">席数：カウンター8席・6人掛けテーブル4つ</p>
-					<p class="footer-contact-parking">駐車場：あり（6台）</p>
-					<p class="footer-contact-payment">お支払い：各種クレジットカード、交通系IC、PayPay<br>インボイス対応可</p>
+					<p class="
+				contact-seat footer-contact-seat">席数：カウンター8席・6人掛けテーブル4つ</p>
+					<p class="contact-parking footer-contact-parking">駐車場：あり（6台）</p>
+					<p class="contact-payment footer-contact-payment">お支払い：各種クレジットカード、交通系IC、PayPay<br>インボイス対応可</p>
 				</div>
 				<div class="footer-contact-button botton-white">
 					<a href="<?php echo esc_url(home_url('/contact/')); ?>">
