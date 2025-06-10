@@ -16,14 +16,15 @@
 
 		<section class="news">
 			<div class="news-wrapper contents-wrapper fade-in">
-				<h2 class="section-title">
-					お知らせ
+				<h2 class="news-section-title section-title">
+					お知らせ一覧
 				</h2>
 
 				<div class="news-header-content">
+					<p class="archive-title color-white pc">アーカイブ</p>
 					<div class="archive-select">
 						<select class="archive-dropdown" name="archive-dropdown" onChange='document.location.href=this.options[this.selectedIndex].value;'>
-							<option value="<?php echo esc_url(home_url('/news/')); ?>">アーカイブ <span class="select-color">All</span></option>
+							<option value="<?php echo esc_url(home_url('/news/')); ?>">月別アーカイブ</option>
 							<?php
 							wp_get_archives(array(
 								'type' => 'monthly',
@@ -48,9 +49,9 @@
 
 				<?php if ($news_query->have_posts()) : ?>
 					<div class="news-body">
-						<ul class="top-news-items">
+						<ul class="news-items page-news-items">
 							<?php while ($news_query->have_posts()) : $news_query->the_post(); ?>
-								<li class="top-news-item news-item">
+								<li class="news-item">
 									<a href="<?php echo esc_url(get_permalink()); ?>">
 										<div class="news-item-meta">
 											<p class="news-item-date"><?php the_time('Y.m.d'); ?></p>
@@ -67,7 +68,7 @@
 						</ul>
 
 						<div class="pagenavi">
-							<div class="pagenavi__inner">
+							<div class="pagenavi-inner contents-wrapper">
 								<!-- WP-PageNaviで出力される部分 -->
 								<!-- サブループの場合 -->
 								<?php wp_pagenavi(array('query' => $news_query)); ?>

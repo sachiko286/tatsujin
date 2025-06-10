@@ -144,7 +144,7 @@
 				?>
 
 				<?php if ($news_query->have_posts()) : ?>
-					<ul class="top-news-items">
+					<ul class="top-news-items news-items">
 						<?php while ($news_query->have_posts()) : $news_query->the_post(); ?>
 							<li class="top-news-item news-item">
 								<a href="<?php echo esc_url(get_permalink()); ?>">

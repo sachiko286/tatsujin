@@ -332,8 +332,9 @@
 								</a>
 							</li>
 							<li class="sake-brewery-label">
-								<a href="http://www.shopdaiya.jp/" target="_blank" rel="noopener noreferrer"></a>
+								<a href="http://www.shopdaiya.jp/" target="_blank" rel="noopener noreferrer">
 								<img src="<?php echo get_template_directory_uri(); ?>/images/assets/sake-brewery04.jpg" alt="酒蔵ダイヤ菊ラベル">
+								</a>
 							</li>
 							<li class="sake-brewery-label">
 								<a href="https://koten-sake.co.jp/" target="_blank" rel="noopener noreferrer">
