@@ -15,7 +15,7 @@
 		</section>
 
 		<section class="other-business">
-			<div class="other-business-wrapper contents-wrapper">
+			<div class="other-business-wrapper contents-wrapper fade-in">
 				<div class="other-business-content">
 					<div class="other-business-body color-white">
 						<h3 class="other-business-title">

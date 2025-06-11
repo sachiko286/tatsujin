@@ -15,7 +15,7 @@
 		</section>
 
 		<section class="company">
-			<div class="company-wrapper contents-wrapper color-white">
+			<div class="company-wrapper contents-wrapper color-white fade-in">
 				<h2 class="company-title">
 					会社概要
 				</h2>

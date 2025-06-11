@@ -1180,6 +1180,9 @@ body {
 
 
 @media screen and (max-width:1023px) {
+	.instagram {
+
+	}
 	.parallax {
 		height: 550px;
 	}
@@ -1229,6 +1232,7 @@ body {
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
+	padding: 50px 0;
 
 }
 
@@ -1253,6 +1257,10 @@ body {
 	list-style: none;
 	padding: 0;
 	align-items: center;
+}
+
+.instagram-scroll + .instagram-scroll {
+	margin-top: -30px;
 }
 
 .instagram-scroll-list-left {
@@ -1280,6 +1288,7 @@ body {
 
 .instagram-scroll-list-right {
 	animation: instagram-scroll-right 80s infinite linear 0.5s both;
+
 }
 
 
@@ -1473,6 +1482,8 @@ body {
 	justify-content: space-between;
 	margin-top: 50px;
 	gap: 153px;
+	max-width: 1500px;
+	margin-inline: auto;
 }
 
 .top-other-business-body {
@@ -1483,7 +1494,7 @@ body {
 
 .top-other-business-title {
 	font-weight: 700;
-	font-size: 4rem;
+	font-size: clamp(2.5rem, 0.926rem + 3.28vw, 4rem);
 	color: rgba(255, 255, 255, 1);
 
 }
@@ -1510,7 +1521,7 @@ body {
 
 
 .top-other-business-img-content {
-	max-width: 646px;
+	max-width: 656px;
 	width: 43.7333%;
 }
 
@@ -1541,6 +1552,14 @@ body {
 
 	.top-other-business-body {
 		max-width: 435px;
+	}
+
+	.top-other-business-text {
+		margin-top: 30px;
+	}
+
+	.top-other-business-button {
+		margin-top: 30px;
 	}
 }
 
@@ -1573,6 +1592,7 @@ body {
 
 	.top-other-business-img-content {
 		width: 100%;
+	
 	}
 }
 
@@ -2231,7 +2251,7 @@ body {
 
 .other-menu-content,
 .menu-drink-content {
-	margin-top: 100px;
+	margin-top: 80px;
 	max-width: 900px;
 	margin-inline: auto;
 	display: flex;

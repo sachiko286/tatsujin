@@ -35,7 +35,7 @@
 		</section>
 
 		<section class="sake">
-			<div class="sake-wrapper">
+			<div class="sake-wrapper fade-in">
 				<div class="sake-pc pc">
 					<div class="sake-img">
 						<img src="<?php echo get_template_directory_uri(); ?>/images/assets/sake.png" alt="酒">
@@ -70,7 +70,7 @@
 		</section>
 
 		<section class="skewer">
-			<div class="skewer-wrapper">
+			<div class="skewer-wrapper fade-in">
 				<div class="skewer-pc pc">
 					<div class="skewer-content">
 						<!-- <div class="sake-title-area"> -->
@@ -107,14 +107,18 @@
 			<div class="fire-img">
 				<img src="<?php echo get_template_directory_uri(); ?>/images/assets/fire-img.jpg" alt="炭火">
 			</div>
+
 			<div class="fire-text-wrapper pc">
-				<p class="fire-text">炭火</p>
+				<div class="fade-in">
+					<p class="fire-text">炭火</p>
+				</div>
 			</div>
+
 
 		</section>
 
 		<section class="menu-botton">
-			<div class="contents-wrapper menu-botton-wrapper">
+			<div class="contents-wrapper menu-botton-wrapper fade-in">
 				<div class="food-menu menu-botton-box">
 					<a href="<?php echo esc_url(home_url('/menu/')); ?>">
 						<P class="botton-title">お品書きを見る</P>
@@ -130,7 +134,7 @@
 		</section>
 
 		<section class="top-news">
-			<div class="top-news-wrapper contents-wrapper">
+			<div class="top-news-wrapper contents-wrapper fade-in">
 				<h2 class="section-title">
 					お知らせ
 				</h2>
@@ -185,7 +189,7 @@
 		</section>
 
 		<section class="instagram">
-			<div class="instagram-wrapper">
+			<div class="instagram-wrapper fade-in">
 				<div class="instagram-img-content">
 					<div class="instagram-scroll">
 						<div class="instagram-scroll-wrap">
@@ -266,7 +270,7 @@
 		</section>
 
 		<section class="top-nikai">
-			<div class="contents-wrapper top-nikai-wrapper">
+			<div class="contents-wrapper top-nikai-wrapper fade-in">
 				<div class="top-nikai-body">
 					<div class="top-nikai-title">
 						姉妹店<br>信州みそホルモンNIKAI
@@ -290,7 +294,7 @@
 		</section>
 
 		<section class="top-other-business">
-			<div class="top-other-business-wrapper">
+			<div class="top-other-business-wrapper fade-in">
 				<div class="top-other-business-body">
 					<div class="top-other-business-title">Other Business</div>
 					<p class="top-other-business-text line-height-text">プロが手掛ける「筆文字」「手書きメニュー」を承っております。詳細は下記ボタンよりご覧ください。</p>
@@ -303,16 +307,12 @@
 				</div>
 				<div class="top-other-business-img-content">
 					<img src="<?php echo get_template_directory_uri(); ?>/images/assets/other-business-img.png" alt="ビジネスサンプル">
-					<!-- 
-					<img src="<?php echo get_template_directory_uri(); ?>/images/assets/other-business01.png" alt="メニュー">
-					<img src="<?php echo get_template_directory_uri(); ?>/images/assets/other-business02.png" alt="看板">
-					<img src="<?php echo get_template_directory_uri(); ?>/images/assets/other-business03.png" alt="外装"> -->
 				</div>
 			</div>
 		</section>
 
 		<section class="top-company">
-			<div class="top-company-wrapper">
+			<div class="top-company-wrapper fade-in">
 				<div class="top-company-img">
 					<img src="<?php echo get_template_directory_uri(); ?>/images/assets/company-img.jpg" alt="外装">
 				</div>
@@ -330,7 +330,7 @@
 		</section>
 
 		<section class="top-recruit">
-			<div class="top-recruit-wrapper contents-wrapper">
+			<div class="top-recruit-wrapper contents-wrapper fade-in">
 				<div class="top-recruit-body">
 					<div class="top-recruit-title">
 						<p class="top-recruit-title-top"><span>正</span>社員・<span>ア</span>ルバイト</p>
