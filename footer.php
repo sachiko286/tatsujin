@@ -4,7 +4,6 @@
 	<?php endif; ?>
 	<div class="footer-bg"></div>
 	<div class="contents-wrapper">
-
 		<div class="footer-content fade-in">
 			<div class="footer-contact">
 				<p class="footer-contact-title">
@@ -54,6 +53,7 @@
 				</div>
 			</div>
 		</div>
+	</div>
 </footer>
 
 <div id="js-pagetop" class="pagetop">page top<span class="arrow"></span></div>
