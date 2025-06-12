@@ -22,7 +22,7 @@
 						炭火焼きの技術を基礎から学び楽しく働ける環境が整っています。未経験の方でも安心してスタートできるよう、丁寧な研修と先輩スタッフのサポートが充実。やきとりの知識や接客スキルが自然と身につき、美味しい料理と笑顔でお客様をおもてなしできるように、チームワークを大切にしながらやりがいを感じられる職場です！
 					</p>
 					<div class="recruit-introduction-img">
-						<img src="<?php echo get_template_directory_uri(); ?>/images/assets/recruit-img01.png" alt="焼き鳥を焼く画像">
+						<img src="<?php echo get_template_directory_uri(); ?>/images/assets/recruit-img01.jpg" alt="焼き鳥を焼く画像">
 					</div>
 				</div>
 			</div>

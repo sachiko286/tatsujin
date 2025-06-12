@@ -30,7 +30,7 @@ section {
 
 	.contents-wrapper {
 		max-width: 550px;
-		width: calc(100% - 40px);
+		width: calc(100% - 50px);
 	}
 
 
@@ -1180,9 +1180,7 @@ body {
 
 
 @media screen and (max-width:1023px) {
-	.instagram {
 
-	}
 	.parallax {
 		height: 550px;
 	}
@@ -1203,9 +1201,7 @@ body {
 }
 
 @media screen and (max-width:767px) {
-	.body::before {
-		/* content: none; */
-	}
+
 
 	.parallax {
 		height: 350px;
@@ -1228,7 +1224,7 @@ body {
 -----------------------------------------------------------------------------------------*/
 
 .instagram {
-	background-image: url(../images/assets/instagram-bg.png);
+	background-image: url(../images/assets/instagram-bg.jpg);
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -1788,7 +1784,7 @@ body {
 -----------------------------------------------------------------------------------------*/
 
 .menu-food {
-	background-image: url(../images/assets/menu-bg.png);
+	background-image: url(../images/assets/menu-bg.jpg);
 	background-position: center;
 	background-size: auto;
 	background-repeat: no-repeat;
@@ -1906,12 +1902,15 @@ body {
 
 .price-sub-title {
 	font-weight: 700;
-	font-size: 2rem;
+	font-size: clamp(1.5rem, 0.975rem + 1.09vw, 2rem);
 	max-width: 400px;
 	width: 100%;
 	height: 50px;
 	background: rgba(255, 255, 255, 1);
 	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .course-add-memo {
@@ -2575,22 +2574,22 @@ body {
 	.sake-brewery {
 		padding-top: 0px;
 		padding-bottom: 0;
-		max-width: 440px;
+		max-width: 400px;
 		margin-top: 30px;
+		padding-bottom: 30px;
 	}
 
+	.sake-brewery-labels {
+		row-gap: 15px;
+	}
 	.sake-brewery-label img {
-		max-width: 100px;
+		max-width: 96px;
 	}
 
 	.menu-drink-header-text {
 		font-size: 10rem;
 	}
 
-	.sake-brewery-map-title,
-	.sake-brewery-map-text {
-		/* text-align: center; */
-	}
 
 	.sake-brewery-labels {
 		padding-top: 30px;
@@ -2641,7 +2640,7 @@ body {
 -----------------------------------------------------------------------------------------*/
 
 .company {
-	background-image: url(../images/assets/company-bg.png);
+	background-image: url(../images/assets/company-bg.jpg);
 	background-position: center;
 	background-size: auto;
 	background-repeat: no-repeat;
@@ -2734,7 +2733,7 @@ body {
 -----------------------------------------------------------------------------------------*/
 
 .other-business {
-	background-image: url(../images/assets/other-business-bg.png);
+	background-image: url(../images/assets/other-business-bg.jpg);
 	background-position: center;
 	background-size: auto;
 	background-repeat: no-repeat;
@@ -2752,7 +2751,6 @@ body {
 	gap: 53px;
 }
 
-.other-business-body {}
 
 .other-business-title {
 	font-weight: 700;
@@ -2830,7 +2828,7 @@ body {
 /*contact
 -----------------------------------------------------------------------------------------*/
 .contact {
-	background-image: url(../images/assets/contact-tel-bg.png);
+	background-image: url(../images/assets/contact-tel-bg.jpg);
 	background-position: center;
 	background-size: auto;
 	background-repeat: no-repeat;
@@ -3318,7 +3316,6 @@ body {
 	margin-top: 81px;
 }
 
-.contents-wrapper {}
 
 .recruit-introduction-title {
 	font-weight: 700;
@@ -3326,7 +3323,6 @@ body {
 	text-align: center;
 }
 
-.section-title {}
 
 .recruit-introduction-content {
 	margin-top: 57px;
@@ -3399,15 +3395,9 @@ body {
 	margin-inline: auto;
 }
 
-.contents-wrapper {}
-
-.recruit-learn-title {}
-
 .recruit-learn-title::first-letter {
 	font-size: 4rem;
 }
-
-.section-title {}
 
 .recruit-learn-content {
 	max-width: 810px;
@@ -3470,7 +3460,7 @@ body {
 }
 
 .recruit-flow {
-	background-image: url(../images/assets/recruit-flow-bg03.png);
+	background-image: url(../images/assets/recruit-flow-bg03.jpg);
 	background-position: center;
 	background-size: auto;
 	background-repeat: no-repeat;
@@ -3510,8 +3500,6 @@ body {
 	z-index: -1;
 }
 
-.contents-wrapper {}
-
 .recruit-flow-wrapper {
 	max-width: 900px;
 	margin-inline: auto;
@@ -3529,8 +3517,6 @@ body {
 	margin-bottom: -221px;
 	color: rgba(51, 51, 51, 1);
 }
-
-.section-title {}
 
 .recruit-preparation {
 	max-width: 450px;
