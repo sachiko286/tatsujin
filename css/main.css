@@ -296,7 +296,7 @@ body {
 	z-index: -1;
 }
 
-.fv-bg img {
+.fv-bg video {
 	width: 100%;
 	object-fit: cover;
 	height: inherit;
@@ -451,7 +451,7 @@ body {
 }
 
 @media screen and (max-width:767px) {
-	.fv-bg img {
+	.fv-bg video {
 		object-fit: cover;
 		object-position: 80%;
 	}
@@ -475,7 +475,7 @@ body {
 		height: 360px;
 	}
 
-	.fv-bg img {
+	.fv-bg video {
 		object-position: center;
 	}
 
@@ -877,9 +877,11 @@ body {
 	clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%);
 }
 
-.fire-img img {
+.fire-img video {
+	width: 100%;
 	height: 900px;
 	object-fit: cover;
+	pointer-events: none;
 }
 
 
@@ -923,7 +925,7 @@ body {
 }
 
 @media screen and (max-width:1023px) {
-	.fire-img img {
+	.fire-img video {
 		height: 600px;
 	}
 
@@ -954,7 +956,7 @@ body {
 		margin-top: -200px;
 	}
 
-	.fire-img img {
+	.fire-img video {
 		height: 225px;
 	}
 }
@@ -1255,7 +1257,7 @@ body {
 	align-items: center;
 }
 
-.instagram-scroll + .instagram-scroll {
+.instagram-scroll+.instagram-scroll {
 	margin-top: -30px;
 }
 
@@ -1588,7 +1590,7 @@ body {
 
 	.top-other-business-img-content {
 		width: 100%;
-	
+
 	}
 }
 
@@ -2582,6 +2584,7 @@ body {
 	.sake-brewery-labels {
 		row-gap: 15px;
 	}
+
 	.sake-brewery-label img {
 		max-width: 96px;
 	}
@@ -3389,7 +3392,8 @@ body {
 	background: rgba(255, 255, 255, 0.65);
 	padding-top: 18px;
 	backdrop-filter: blur(10px);
-	-webkit-backdrop-filter: blur(10px); /* Safari対応 */
+	-webkit-backdrop-filter: blur(10px);
+	/* Safari対応 */
 	max-width: 1130px;
 	width: 100%;
 	margin-inline: auto;
@@ -3741,6 +3745,7 @@ body {
 	.recruit-open {
 		margin-top: 30px;
 	}
+
 	.recruit-open-body {
 		margin-right: 15px;
 	}
@@ -3769,7 +3774,624 @@ body {
 
 }
 
+/*page-nikai
+-----------------------------------------------------------------------------------------*/
+.nikai-fv {
+	height: 560px;
+	padding: 0;
+}
 
+.nikai-fv-img {
+	width: 100%;
+	height: inherit;
+}
+
+.nikai-fv-img img {
+	object-fit: cover;
+	height: 100%;
+}
+
+.nikai-read {
+	padding-top: 74px;
+	padding-bottom: 100px;
+	background-image: url(../images/assets/nikai-read.png);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.contents-wrapper {}
+
+.nikai-read-wrapper {
+	max-width: 900px;
+	margin-inline: auto;
+}
+
+.nikai-read-title {
+	font-weight: 700;
+	font-size: 3rem;
+	text-align: center;
+}
+
+.nikai-read-text {
+	font-weight: 700;
+	font-size: 1rem;
+	margin-top: 50px;
+}
+
+.nikai-miso {
+	padding-top: 0;
+}
+
+.nikai-miso-bg {
+	width: 100%;
+	height: 521px;
+}
+
+.nikai-miso-bg img {
+	object-fit: cover;
+	height: 100%;
+}
+
+.naka-miso-content {}
+
+.nakai-miso-content-title {}
+
+.nakai-miso-text {}
+
+
+
+
+
+
+
+.hormone-body-title,
+.hormone-price {
+	font-weight: 700;
+	font-size: clamp(2.25rem, 1.463rem + 1.64vw, 3rem);
+}
+
+.hormone-top-img {
+	max-width: 516px;
+}
+
+.hormone-top-body {
+	max-width: 450px;
+	flex-shrink: 0;
+}
+
+.hormone-body-title {
+	border-bottom: 3px solid rgba(51, 51, 51, 1);
+	padding-bottom: 15px;
+	color: rgba(238, 113, 107, 1);
+}
+
+.hormone-part {
+	font-size: clamp(1.75rem, 1.225rem + 1.09vw, 2.25rem);
+}
+
+.hormone-price {
+	text-align: center;
+}
+
+.hormone-price span {
+	font-size: clamp(1.75rem, 0.963rem + 1.64vw, 2.5rem);
+}
+
+.pig-hormone {}
+
+.contents-wrapper {}
+
+.pig-hormone-title {
+	font-weight: 700;
+	font-size: clamp(4rem, 1.902rem + 4.37vw, 6rem);
+	text-align: center;
+	line-height: 1.2;
+	position: relative;
+}
+
+.pig-hormone-title::before {
+	content: "豚";
+	display: block;
+	font-size: clamp(10rem, -12.295rem + 46.45vw, 31.25rem);
+	color: rgba(85, 85, 85, 0.5);
+	transform: rotate(23.06deg);
+	position: absolute;
+	top: -134px;
+	left: calc(50% - 54.9333vw);
+	z-index: -1;
+
+}
+
+.pig-hormone-title span:nth-of-type(1) {
+	font-size: clamp(6rem, 3.902rem + 4.37vw, 8rem);
+	color: rgba(173, 2, 12, 1);
+}
+
+.pig-hormone-title span:nth-of-type(2) {
+	font-size: clamp(3rem, 1.951rem + 2.19vw, 4rem);
+}
+
+.pig-hormone-comment {
+	text-align: center;
+}
+
+.pig-hormone-content {
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+	gap: clamp(1.875rem, -16.007rem + 27.94vw, 10.188rem);
+	margin-top: 100px;
+}
+
+.pig-hormone-img {}
+
+
+.pig-hormone-body {
+	width: 37.5%;
+}
+
+.pig-hormone-body-title {
+	text-align: center;
+}
+
+.pig-hormone-body-title span {
+	margin-right: 18px;
+}
+
+
+@media screen and (max-width:1200px) {
+	.pig-hormone-title::before {
+		top: -30px;
+	}
+
+}
+
+@media screen and (max-width:1023px) {
+	.pig-hormone-title::before {
+		top: 16px;
+	}
+
+	.pig-hormone-body {
+		width: 50%;
+	}
+}
+
+@media screen and (max-width:767px) {
+	.hormone-top-body {
+		max-width: none;
+		width: 100%;
+		text-align: center;
+	}
+
+	.hormone-top-img {
+		max-width: none;
+	}
+
+	.pig-hormone-title {
+		font-size: 2.5rem;
+	}
+
+	.pig-hormone-title span:nth-of-type(1) {
+		font-size: 3.5rem;
+	}
+
+	.pig-hormone-title span:nth-of-type(2) {
+		font-size: 2rem;
+	}
+
+	.pig-hormone-title::before {
+		display: none;
+	}
+
+	.pig-hormone-content {
+		flex-direction: column;
+	}
+}
+
+
+
+.cow-hormone {}
+
+.contents-wrapper {}
+
+.cow-hormone-title {
+	font-weight: 700;
+	font-size: clamp(3rem, 1.951rem + 2.19vw, 4rem);
+	text-align: center;
+	position: relative;
+
+}
+
+.cow-hormone-title::before {
+	content: "スタッフおススメ";
+	font-weight: 800;
+	font-size: clamp(2.25rem, 0.637rem + 2.52vw, 3rem);
+	width: clamp(21.875rem, 8.43rem + 21.01vw, 28.125rem);
+	height: clamp(5rem, 2.311rem + 4.2vw, 6.25rem);
+	background: rgba(254, 226, 76, 1);
+	transform: rotate(3.75deg);
+	color: rgba(51, 51, 51, 1);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	right: calc(50% - 450px);
+	bottom: 52px;
+	z-index: -1;
+}
+
+.cow-hormone-title span {
+	font-size: clamp(3rem, -0.148rem + 6.56vw, 6rem);
+	color: rgba(173, 2, 12, 1);
+}
+
+
+.cow-hormone-top {
+	display: flex;
+	align-items: center;
+	gap: clamp(1.875rem, -13.991rem + 24.79vw, 9.25rem);
+	margin-top: 50px;
+}
+
+
+
+.cow-hormone-note {
+	font-weight: 700;
+	font-size: clamp(2.25rem, 1.463rem + 1.64vw, 3rem);
+}
+
+.cow-hormone-bottom {
+	margin-top: 100px;
+	max-width: 900px;
+	margin-inline: auto;
+	display: flex;
+	gap: 44px;
+}
+
+.cow-hormone-bottom-box {
+	width: 47.5555%;
+}
+
+.cow-hormone-bottom-box:first-child {
+	margin-top: 85px;
+}
+
+.cow-hormone-bottom-body {
+	margin-top: 30px;
+}
+
+.cow-hormone-bottom-box {
+
+	.cow-hormone-note,
+	.hormone-body-title,
+	.hormone-price {
+		font-size: clamp(2.25rem, 1.988rem + 0.55vw, 2.5rem);
+	}
+
+	.hormone-price span {
+		font-size: clamp(1.75rem, 1.488rem + 0.55vw, 2rem);
+	}
+
+}
+
+.cow-hormone-bottom-body {
+	.hormone-text {
+		margin-top: 30px;
+	}
+}
+
+
+
+@media screen and (max-width:1023px) {
+	.cow-hormone-title::before {
+		font-size: 2rem;
+		width: 300px;
+		height: 60px;
+		right: calc(50% - 300px);
+		bottom: 40px;
+		z-index: -1;
+	}
+
+	.cow-hormone-bottom {
+		margin-top: 50px;
+	}
+
+	.cow-hormone-bottom-body {
+		margin-top: 10px;
+
+		.hormone-text {
+			margin-top: 10px;
+		}
+	}
+
+
+}
+
+@media screen and (max-width:767px) {
+	.cow-hormone-top {
+		gap: 10px;
+	}
+
+	.cow-hormone-title::before {
+		font-size: 1.5rem;
+		width: 180px;
+		height: 40px;
+		right: calc(50% - 164px);
+		bottom: 40px;
+		z-index: -1;
+	}
+
+	.cow-hormone-top {
+		flex-direction: column;
+	}
+
+	.hormone-top-body {
+		max-width: none;
+		width: 100%;
+		text-align: center;
+	}
+
+	.cow-hormone-bottom {
+		flex-direction: column;
+		gap: 40px;
+		margin-top: 40px;
+	}
+
+	.cow-hormone-bottom-box {
+		width: 100%;
+	}
+
+	.cow-hormone-bottom-box:first-child {
+		margin-top: 0;
+	}
+
+	.cow-hormone-bottom-box {
+
+		.cow-hormone-note,
+		.hormone-body-title {
+			text-align: center;
+
+		}
+	}
+}
+
+
+
+
+
+.one-dish {
+	padding-bottom: 200px;
+}
+
+.one-dish-wrapper {}
+
+.one-dish-content {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.one-dish-body {
+	max-width: 597px;
+	width: 49.75%;
+}
+
+.one-dish-title {
+	font-weight: 700;
+	font-size: clamp(3rem, -0.148rem + 6.56vw, 6rem);
+}
+
+.one-dish-title span {
+	display: block;
+	color: rgba(246, 110, 112, 1);
+	width: fit-content;
+	margin-left: auto;
+}
+
+.one-dish-text {
+	font-weight: 700;
+	font-size: 1rem;
+	margin-left: 150px;
+}
+
+.one-dish-img {
+	max-width: 600px;
+	width: 50%;
+}
+
+.one-dish-comment {
+	font-weight: 700;
+	font-size: 1rem;
+	text-align: center;
+	margin-top: 40px;
+}
+
+@media screen and (max-width:1023px) {
+	.one-dish {
+		padding-bottom: 130px;
+	}
+
+	.one-dish-content {
+		gap: 30px;
+	}
+
+	.one-dish-text {
+		margin-left: 0;
+	}
+}
+
+@media screen and (max-width:767px) {
+	.one-dish {
+		padding-bottom: 50px;
+	}
+
+	.one-dish-content {
+		flex-direction: column;
+	}
+
+	.one-dish-body,
+	.one-dish-img {
+		width: 100%;
+	}
+
+	.one-dish-text {
+		margin-top: 10px;
+	}
+
+	.one-dish-comment {
+		margin-top: 30px;
+	}
+}
+
+
+
+
+.nikai-drink {
+	position: relative;
+	padding-bottom: 50px;
+	padding-top: 50px;
+}
+
+.nikai-drink-bg {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 600px;
+	background-image: url(../images/assets/nikai-drink-bg.png);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	z-index: -1;
+}
+
+.contents-wrapper {}
+
+.nikai-drink-wrapper {
+	max-width: 1100px;
+	margin-inline: auto;
+}
+
+.nikai-drink-title {
+	font-weight: 700;
+	font-size: clamp(2.875rem, 1.695rem + 2.46vw, 4rem);
+	text-align: center;
+	position: relative;
+}
+
+.nikai-drink-title::before {
+	content: "";
+	display: inline-block;
+	aspect-ratio: 1100 / 620;
+	max-width: 1100px;
+	width: 100%;
+	position: absolute;
+	bottom: -148px;
+	left: 50%;
+	transform: translateX(-51%);
+	z-index: -1;
+	background-image: url(../images/assets/nikai-drink-img.png);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.nikai-drink-title span {
+	color: rgba(246, 110, 112, 1);
+	display: block;
+}
+
+.nikai-drink-content {
+	margin-top: 203px;
+	display: flex;
+	justify-content: space-between;
+	gap: 30px;
+}
+
+.nikai-drink-box {
+	max-width: 500px;
+	background: rgba(51, 51, 51, 1);
+	padding: 0 18px 33px;
+	flex: 1;
+}
+
+.nikai-drink-sub-title {
+	font-weight: 700;
+	font-size: clamp(2rem, 0.951rem + 2.19vw, 3rem);
+	color: rgba(51, 51, 51, 1);
+	background: rgba(254, 226, 76, 1);
+	max-width: 400px;
+	width: 100%;
+	height: 100px;
+	margin-inline: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	top: -50px;
+
+}
+
+.nikai-drink-text {
+	font-weight: 700;
+	font-size: 1rem;
+	max-width: 333px;
+	width: 100%;
+	margin-inline: auto;
+	margin-top: 16px;
+}
+
+.nikai-drink-price {
+	font-weight: 700;
+	font-size: clamp(1.25rem, 0.201rem + 2.19vw, 2.25rem);
+	margin-top: 15px;
+	text-align: center;
+}
+
+@media screen and (max-width:1023px) {
+	.nikai-drink-text {
+		margin-top: -24px;
+	}
+
+	.nikai-drink-sub-title {
+		height: 70px;
+	}
+
+	.nikai-drink-title::before {
+		bottom: -100px;
+	}
+
+	.nikai-drink-content {
+		margin-top: 150px;
+	}
+}
+
+@media screen and (max-width:767px) {
+	.nikai-drink-title {
+		font-size: 2.5rem;
+	}
+
+	.nikai-drink-title::before {
+		width: 320px;
+		bottom: -148px;
+	}
+
+	.nikai-drink-content {
+		flex-direction: column;
+	}
+
+	.nikai-drink-box {
+		max-width: none;
+	}
+
+	.nikai-drink-box+.nikai-drink-box {
+		margin-top: 50px;
+	}
+
+	.nikai-drink-content {
+		margin-top: 215px;
+	}
+}
 
 
 

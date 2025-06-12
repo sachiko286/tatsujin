@@ -4,7 +4,7 @@
 		<section class="fv">
 			<div class="fv-wrapper">
 				<div class="fv-bg">
-					<img src="<?php echo get_template_directory_uri(); ?>/images/assets/fv.jpg" alt="FV画像">
+					<video src="<?php echo get_template_directory_uri(); ?>/images/assets/fv.mp4" autoplay muted loop playsinline></video>
 				</div>
 				<div class="fv-content">
 					<div class="fv-content-left pc">
@@ -105,7 +105,9 @@
 
 		<section class="fire">
 			<div class="fire-img">
-				<img src="<?php echo get_template_directory_uri(); ?>/images/assets/fire-img.jpg" alt="炭火">
+				<!-- <img src="<?php echo get_template_directory_uri(); ?>/images/assets/fire-img.jpg" alt="炭火"> -->
+				 					<video src="<?php echo get_template_directory_uri(); ?>/images/assets/fire.mov" autoplay muted loop playsinline></video>
+
 			</div>
 
 			<div class="fire-text-wrapper pc">

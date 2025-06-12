@@ -32,7 +32,7 @@
 
 <body class="<?php if (is_front_page()) : ?>body<?php endif; ?>">
 
-	<header class="header js-header <?php if (is_single()) : ?>header-bg<?php endif; ?>">
+	<header class="header js-header <?php if (is_single() || is_page("nikai")) : ?>header-bg<?php endif; ?>">
 		<div class="header-inner <?php if (is_front_page()) : ?>flex-end<?php endif; ?>">
 			<div class="header-logo <?php if (is_front_page()) : ?>header-none<?php endif; ?>">
 				<a href="<?php echo esc_url(home_url('/')); ?>">
