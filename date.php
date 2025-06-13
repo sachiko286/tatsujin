@@ -25,7 +25,7 @@
             <p class="archive-title color-white pc">アーカイブ</p>
             <div class="archive-select">
                 <select class="archive-dropdown" name="archive-dropdown" onChange='document.location.href=this.options[this.selectedIndex].value;'>
-                    <option value="<?php echo esc_url(home_url('/news/')); ?>">月別アーカイブ</option>
+                    <option value="<?php echo esc_url(home_url('/news/')); ?>">月を選択</option>
                     <?php
                     wp_get_archives(array(
                         'type' => 'monthly',

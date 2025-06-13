@@ -1329,21 +1329,31 @@ html {
 	color: rgba(173, 2, 12, 1);
 }
 
-@media screen and (max-width:1023px) {
+@media screen and (max-width:1439px) {
 	.instagram-body {
-		margin-top: 30px;
+		justify-content: space-around;
 	}
 
-	.intagram-text {
+	.intagram-text,
+	.instagram-box {
 		margin-left: 0;
 	}
 
 	.instagram-dragon {
 		margin-left: 30px;
+		margin-right: 30px;
+	}
+}
+
+
+@media screen and (max-width:1023px) {
+	.instagram-body {
+		margin-top: 30px;
+		justify-content: center;
 	}
 
+
 	.instagram-box {
-		margin-left: 0;
 		margin-top: 30px;
 	}
 
@@ -1381,7 +1391,6 @@ html {
 	}
 }
 
-@media screen and (max-width:466px) {}
 
 /*top-nikai 
 -----------------------------------------------------------------------------------------*/
@@ -1723,7 +1732,10 @@ html {
 	font-size: 1rem;
 	max-width: 456px;
 	margin-inline: auto;
+}
 
+.top-recruit-text {
+	font-weight: 400;
 }
 
 .top-recruit-text+.top-recruit-text {
@@ -2928,6 +2940,7 @@ html {
 	font-size: clamp(1rem, -0.049rem + 2.19vw, 2rem);
 	white-space: nowrap;
 	text-align-last: justify;
+	font-weight: 400;
 }
 
 @media screen and (max-width:1439px) {
@@ -3128,8 +3141,13 @@ html {
 
 }
 
+.form-recaptcha-title {
+	font-weight: 400;
+}
+
 .form-recaptcha-text {
 	max-width: 572px;
+	font-weight: 400;
 }
 
 .form-recaptcha-text a {

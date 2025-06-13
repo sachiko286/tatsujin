@@ -1,10 +1,13 @@
 		<?php get_header(); ?>
 
 		<section class="sub-fv">
-			<div class="sub-fv-wrapper">
-				<div class="sub-fv-bg">
-					<img src="<?php echo get_template_directory_uri(); ?>/images/assets/contact-fv.jpg" alt="FV画像">
+			<div class="fv-content-left pc">
+				<div class="fv-instagram">
+					<a href="https://www.instagram.com/tatsujin_suwa/" target="_blank" rel="noopener noreferrer">
+						<img src="<?php echo get_template_directory_uri(); ?>/images/assets/instagram-icon.svg" alt="LOGO">
+					</a>
 				</div>
+				<P class="fv-copy">© Tatsujin inc. All rights reserved.</P>
 			</div>
 		</section>
 

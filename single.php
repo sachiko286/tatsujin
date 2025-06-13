@@ -11,7 +11,7 @@
 								$cat_name = $cat[0]->cat_name;
 								$cat_color = $cat[0]->slug; ?>
 								<p class="news-item-category <?php echo $cat_color ?>"><?php echo $cat_name ?></p>
-								<p class="news-item-date"><?php the_time('Y.m/d'); ?></p>
+								<p class="news-item-date"><?php the_time('Y.m.d'); ?></p>
 
 							</div>
 							<p class="news-sub-title"><?php the_title(); ?></p>

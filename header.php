@@ -13,20 +13,12 @@
 	<!-- Favicon -->
 	<link rel="icon" href="<?php echo get_template_directory_uri(); ?>/images/assets/favicon.ico">
 	<link rel="apple-touch-icon" sizes="180x180" href="<?php echo get_template_directory_uri(); ?>/images/assets/apple-touch-icon.png">
-	<!-- swiper css -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
 	<!-- Css -->
 	<link href="<?php echo get_template_directory_uri(); ?>/css/base.css?ver=<?php echo date('Ymd'); ?>" rel="stylesheet">
 	<link href="<?php echo get_template_directory_uri(); ?>/css/main.css?ver=<?php echo date('Ymd'); ?>" rel="stylesheet">
 	<link href="<?php echo get_template_directory_uri(); ?>/style.css?ver=<?php echo date('Ymd'); ?>" rel="stylesheet">
 	<!-- Jquery -->
 	<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-	<!-- Drawer -->
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.1.0/css/drawer.min.css" rel="stylesheet">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.1.3/iscroll.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.1.0/js/drawer.min.js"></script>
-	<!-- swiper script-->
-	<script defer src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 	<?php include(dirname(__FILE__) . "/assets/site-data.php"); ?>
 </head>
 
