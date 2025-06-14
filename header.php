@@ -51,9 +51,9 @@
 					</a>
 				</div>
 				<button class="header-hamburger">
-					<div class="header-hamburger-img js-hamburger">
+					<span class="header-hamburger-img js-hamburger">
 						<img src="<?php echo get_template_directory_uri(); ?>/images/assets/yakitori-icon.svg" alt="焼き鳥のアイコン">
-					</div>
+					</span>
 				</button>
 			</nav>
 			<div class="header-drawer js-drawer">

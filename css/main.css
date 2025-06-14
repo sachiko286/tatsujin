@@ -72,21 +72,6 @@ html {
 	scroll-behavior: smooth;
 }
 
-/* html {
-	scroll-padding-top: 100px;
-}
-
-@media screen and (max-width:1439px) {
-	html {
-		scroll-padding-top: 80px;
-	}
-}
-
-@media screen and (max-width:1023px) {
-	html {
-		scroll-padding-top: 70px;
-	}
-} */
 
 @media screen and (min-width:768px) {
 	.sp {
@@ -120,6 +105,10 @@ html {
 
 .br-span {
 	display: inline-block;
+}
+
+.error-message {
+	text-align: center;
 }
 
 /*fade
@@ -431,8 +420,7 @@ html {
 	letter-spacing: 0.05em;
 }
 
-
-@media screen and (max-width:1023px) {
+@media screen and (max-width:1439px) {
 	.fv-content {
 		gap: 30px;
 		padding-top: 120px;
@@ -3820,8 +3808,6 @@ html {
 	background-repeat: no-repeat;
 }
 
-.contents-wrapper {}
-
 .nikai-read-wrapper {
 	max-width: 900px;
 	margin-inline: auto;
@@ -3994,13 +3980,10 @@ html {
 	}
 }
 
-
-
 .nikai-hormone-about {
 	padding-bottom: 0;
 }
 
-.contents-wrapper {}
 
 .nikai-hormone-about-title {
 	font-weight: 700;
@@ -4053,8 +4036,6 @@ html {
 	gap: clamp(1.875rem, -4.041rem + 9.24vw, 4.625rem);
 	margin-top: 50px;
 }
-
-.nikai-hormone-about-item {}
 
 .nikai-about-item-img {
 	aspect-ratio: 350 /230;
@@ -4230,10 +4211,6 @@ html {
 	margin-top: 30px;
 }
 
-.pig-hormone {}
-
-.contents-wrapper {}
-
 .pig-hormone-title {
 	font-weight: 700;
 	font-size: clamp(4rem, 1.902rem + 4.37vw, 6rem);
@@ -4275,8 +4252,6 @@ html {
 	gap: clamp(1.875rem, -16.007rem + 27.94vw, 10.188rem);
 	margin-top: 100px;
 }
-
-.pig-hormone-img {}
 
 
 .pig-hormone-body {
@@ -4347,12 +4322,6 @@ html {
 
 
 }
-
-
-
-.cow-hormone {}
-
-.contents-wrapper {}
 
 .cow-hormone-title {
 	font-weight: 700;
@@ -4519,15 +4488,10 @@ html {
 	}
 }
 
-
-
-
-
 .one-dish {
 	padding-bottom: 200px;
 }
 
-.one-dish-wrapper {}
 
 .one-dish-content {
 	display: flex;
@@ -4632,8 +4596,6 @@ html {
 	background-repeat: no-repeat;
 	z-index: -1;
 }
-
-.contents-wrapper {}
 
 .nikai-drink-wrapper {
 	max-width: 1100px;
