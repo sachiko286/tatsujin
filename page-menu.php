@@ -19,7 +19,7 @@
 
 			<section class="menu-food">
 				<div class="contents-wrapper-big">
-					<h2 class="menu-food-title section-title color-white fade-in">
+					<h2 class="menu-food-title section-title color-white fade-in" id="menu-food">
 						お品書き
 					</h2>
 					<div class="course">
@@ -372,7 +372,7 @@
 							<p class="sake-choice-text">厳選された諏訪地域九蔵のお酒のほかにもワインやウイスキー・焼酎などはもちろん、ノンアルカクテル・ソフトドリンクまで豊富なメニューをご用意しております。</p>
 						</div>
 					</div>
-					<h2 class="menu-drink-title section-title fade-in">
+					<h2 class="menu-drink-title section-title fade-in" id="menu-drink">
 						お飲み物
 					</h2>
 					<div class="menu-drink-content fade-in">

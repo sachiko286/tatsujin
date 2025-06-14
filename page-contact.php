@@ -49,7 +49,7 @@
 					</h2>
 					<p class="form-read">メールフォームでのお問い合わせ</p>
 					<div class="form-content">
-						<?php echo do_shortcode('[contact-form-7 id="0bf40dd" title="お問い合わせメール"]'); ?>
+						<?php echo do_shortcode('[contact-form-7 id="94c43e8" title="お問い合わせ"]'); ?>
 					</div>
 				</div>
 			</div>

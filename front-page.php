@@ -106,7 +106,7 @@
 		<section class="fire">
 			<div class="fire-img">
 				<!-- <img src="<?php echo get_template_directory_uri(); ?>/images/assets/fire-img.jpg" alt="炭火"> -->
-				 					<video src="<?php echo get_template_directory_uri(); ?>/images/assets/fire.mov" autoplay muted loop playsinline></video>
+				<video src="<?php echo get_template_directory_uri(); ?>/images/assets/fire.mov" autoplay muted loop playsinline></video>
 
 			</div>
 
@@ -122,12 +122,12 @@
 		<section class="menu-botton">
 			<div class="contents-wrapper menu-botton-wrapper fade-in">
 				<div class="food-menu menu-botton-box">
-					<a href="<?php echo esc_url(home_url('/menu/')); ?>">
+					<a href="<?php echo esc_url(home_url('/menu/')); ?>#menu-food">
 						<P class="botton-title">お品書きを見る</P>
 					</a>
 				</div>
 				<div class="drink-menu menu-botton-box">
-					<a href="<?php echo esc_url(home_url('/menu/')); ?>">
+					<a href="<?php echo esc_url(home_url('/menu/')); ?>#menu-drink">
 						<P class="botton-title">お飲み物を見る</P>
 					</a>
 				</div>
