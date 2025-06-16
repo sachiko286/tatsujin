@@ -52,7 +52,7 @@
 				</div>
 				<div class="sake-sp sp">
 					<div class="sake-sp-title">
-						<p>諏訪<span>九</span>蔵の地酒</p>
+						<p>諏訪地域<span>九</span>蔵の地酒</p>
 					</div>
 					<div class="sake-sp-img">
 						<img src="<?php echo get_template_directory_uri(); ?>/images/assets/sake.png" alt="酒">

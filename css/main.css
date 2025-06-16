@@ -630,7 +630,7 @@ html {
 	}
 
 	.sake-wrapper {
-		margin-top: 240px;
+		margin-top: 200px;
 		justify-content: center;
 		position: relative;
 		max-width: 550px;
@@ -656,16 +656,16 @@ html {
 
 	.sake-sp-img {
 		position: absolute;
-		width: 210px;
+		width: 190px;
 		left: 0;
-		bottom: 23px;
+		bottom:62px;
 	}
 
 	.sake-sp-deco {
 		position: absolute;
-		width: 235px;
-		right: -65px;
-		bottom: -8px;
+		width: 200px;
+		right: -32px;
+		bottom: 0px;
 	}
 }
 
@@ -849,16 +849,15 @@ html {
 	.skewer-sp-img {
 		position: absolute;
 		width: 222px;
-
 		right: -40px;
 		bottom: 20px;
 	}
 
 	.skewer-sp-deco {
 		position: absolute;
-		width: 235px;
-		left: -74px;
-		top: -50px;
+		width: 194px;
+		left: -28px;
+		top: -80px;
 
 	}
 }
@@ -1577,8 +1576,8 @@ html {
 @media screen and (max-width:767px) {
 	.top-other-business-wrapper {
 		flex-direction: column;
-		padding-left: 20px;
-		padding-right: 20px;
+		padding-left: 10px;
+		padding-right: 10px;
 		max-width: 550px;
 		margin-inline: auto;
 	}
@@ -1649,8 +1648,8 @@ html {
 @media screen and (max-width:767px) {
 	.top-company-wrapper {
 		flex-direction: column;
-		padding-left: 20px;
-		padding-right: 20px;
+		padding-left: 10px;
+		padding-right: 10px;
 		gap: 30px;
 		max-width: 550px;
 	}
@@ -1779,7 +1778,7 @@ html {
 
 @media screen and (max-width:767px) {
 	.top-recruit-wrapper {
-		flex-direction: column;
+		flex-direction: column-reverse;
 	}
 
 	.top-recruit-body {
@@ -1792,8 +1791,7 @@ html {
 
 	.top-recruit-img {
 		margin-top: 30px;
-		/* width: 100%; */
-		margin-left: auto;
+		width: 100%;
 	}
 }
 

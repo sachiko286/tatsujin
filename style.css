@@ -232,9 +232,28 @@ div.error-message {
 	opacity: 0.6;
 }
 
-.header-hamburger img {
-	max-width: 92px;
 
+.hamburger-icon {
+	display: none;
+
+}
+
+.hamburger-icon-open {
+	display: inline;
+	max-width: 92px;
+}
+
+.hamburger-icon-close {
+	max-width: 40px;
+
+}
+
+.js-hamburger.is-open .hamburger-icon-open {
+	display: none;
+}
+
+.js-hamburger.is-open .hamburger-icon-close {
+	display: inline;
 }
 
 .header-hamburger-img::after {
@@ -244,8 +263,8 @@ div.error-message {
 	font-size: 1rem;
 	line-height: 1;
 	letter-spacing: 0.2em;
-	text-align: justify;
-	display: inline-block;
+	text-align: center;
+	display: block;
 	color: rgba(255, 255, 255, 1);
 	margin-top: 5px;
 }
@@ -360,6 +379,10 @@ div.error-message {
 	.header-hamburger {
 		width: 70px;
 		margin-right: 10px;
+	}
+
+	.hamburger-icon-close {
+		padding-top: 10px;
 	}
 
 	.header-drawer {
@@ -503,7 +526,7 @@ div.error-message {
 		margin-left: 0;
 	}
 
-	
+
 	.footer-contact-text,
 	.footer-contact-seat,
 	.footer-contact-parking,
@@ -511,7 +534,7 @@ div.error-message {
 		letter-spacing: normal;
 		font-size: 0.875rem;
 	}
-	
+
 	.footer-contact {
 		margin-inline: auto;
 
@@ -644,6 +667,7 @@ div.copy-right {
 
 	}
 }
+
 @media screen and (max-width: 767px) {
 	.pagetop {
 		opacity: 0;

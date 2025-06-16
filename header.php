@@ -52,7 +52,8 @@
 				</div>
 				<button class="header-hamburger">
 					<span class="header-hamburger-img js-hamburger">
-						<img src="<?php echo get_template_directory_uri(); ?>/images/assets/yakitori-icon.svg" alt="焼き鳥のアイコン">
+						<img src="<?php echo get_template_directory_uri(); ?>/images/assets/yakitori-icon.svg" alt="焼き鳥のアイコン" class="hamburger-icon hamburger-icon-open">
+						<img src="<?php echo get_template_directory_uri(); ?>/images/assets/close-icon.svg" alt="閉じるアイコン" class="hamburger-icon hamburger-icon-close">
 					</span>
 				</button>
 			</nav>

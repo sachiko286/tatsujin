@@ -4,42 +4,7 @@ $(function () {
   //===========================================================
   //  ハンバーガーメニュー
   //===========================================================
-  // $(".js-hamburger").on("click", function () {
-  //   if ($(".js-drawer").hasClass("is-open")) {
-  //     closeDrawer(); // ドロワーが開いている場合は閉じる
-  //   } else {
-  //     openDrawer(); // ドロワーを開く
-  //   }
-  // });
 
-  // function openDrawer() {
-  //   $(".js-hamburger").addClass("is-open");
-  //   $(".js-drawer").addClass("is-open");
-  //   $("body").addClass("header-drawer-noscroll");
-  // }
-
-  // function closeDrawer() {
-  //   $(".js-hamburger").removeClass("is-open");
-  //   $(".js-drawer").removeClass("is-open");
-  //   $("body").removeClass("header-drawer-noscroll");
-
-  //   // **アコーディオンを閉じる処理**
-  //   $(".js-header-drawer-nav-accordion").removeClass("is-open"); // クラス削除
-  //   $(".js-header-drawer-nav-accordion").next().slideUp(); // アコーディオンの中身を閉じる
-  // }
-
-  // $(".header-drawer").on("click", function (e) {
-  //   if (!$(e.target).closest(".header-drawer-nav-accordion").length) {
-  //     closeDrawer();
-  //   }
-  // });
-
-  // // ウィンドウリサイズ時にドロワーを閉じる
-  // $(window).on("resize", function () {
-  //   if (window.matchMedia("(min-width: 768px)").matches) {
-  //     closeDrawer();
-  //   }
-  // });
   // ハンバーガーメニュー開閉
   $(".js-hamburger").on("click", function () {
     if ($(".js-drawer").hasClass("is-open")) {
@@ -60,9 +25,6 @@ $(function () {
     $(".js-drawer").removeClass("is-open");
     $("body").removeClass("header-drawer-noscroll");
 
-    // アコーディオンを閉じる
-    $(".js-header-drawer-nav-accordion").removeClass("is-open");
-    $(".js-header-drawer-nav-accordion").next().slideUp();
   }
 
   // ドロワー内クリックイベント処理
@@ -82,17 +44,6 @@ $(function () {
       closeDrawer();
     }
   });
-
-
-  //===========================================================
-  //  アコーディオン
-  //===========================================================
-  $(".js-header-drawer-nav-accordion").on("click", function () {
-    $(this).toggleClass("is-open");
-    $(this).next().slideToggle();
-  });
-
-
 
   //===========================================================
   //  画面可視領域に入ったらふわっと表示
@@ -146,23 +97,6 @@ $(function () {
   //===========================================================
   //   TOPに戻るボタン
   //===========================================================
-
-
-  // $(function () {
-  //   const $pageTop = $("#js-pagetop");
-
-  //   $(window).scroll(function () {
-  //     if ($(window).scrollTop() > 1) {
-  //       $pageTop.fadeIn(300).css('display', 'flex');
-  //     } else {
-  //       $pageTop.fadeOut(300);
-  //     }
-  //   });
-
-  //   $pageTop.click(function () {
-  //     $('html, body').animate({ scrollTop: 0 }, 300);
-  //   });
-  // });
 
   $(function () {
     const $pageTop = $("#js-pagetop");
