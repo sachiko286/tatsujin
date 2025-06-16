@@ -38,7 +38,7 @@
 					</a>
 				</div>
 				<div class="header-nav-contact pc">
-					<a href="<?php echo esc_url(home_url('/contact/')); ?>">
+					<a href="tel:0266-78-6543">
 						<!-- <div class="header-nav-contact-wrapper"> -->
 						<div class="header-nav-contact-icon">
 							<img src="<?php echo get_template_directory_uri(); ?>/images/assets/phone-icon.svg" alt="電話マークアイコン">
@@ -93,9 +93,9 @@
 							</li>
 						</ul>
 						<div class="header-drawer-contact">
-							<p class="header-drawer-contact-text">ご予約・お問い合わせ</p>
+							<a href="<?php echo esc_url(home_url('/contact/')); ?>" class="header-drawer-contact-text">ご予約・お問い合わせ</a>
 							<div class="header-nav-contact ">
-								<a href="<?php echo esc_url(home_url('/contact/')); ?>">
+								<a href="tel:0266-78-6543">
 									<!-- <div class="header-nav-contact-wrapper"> -->
 									<div class="header-nav-contact-icon">
 										<img src="<?php echo get_template_directory_uri(); ?>/images/assets/phone-icon.svg" alt="電話マークアイコン">

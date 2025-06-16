@@ -100,7 +100,7 @@
 					<div class="pig-hormone-body hormone-top-body">
 						<h3 class="pig-hormone-body-title hormone-body-title"><span class="color-black">イチオシ</span>ホルモン</h3>
 						<p class="hormone-price">770円<span>～</span></p>
-						<p class="hormone-text">厳選した新鮮な信州プレミアム牛肉を使用し、口の中でとろける極上の肉寿司をご提供。特製のタレと絡めた濃厚な味わいがご飯と絶妙にマッチし一口食べればやみつきに。ホルモン焼肉屋だからこそ味わえるこだわりの逸品です。贅沢な一貫をぜひご堪能ください！</p>
+						<p class="hormone-text">豚ホルモンは、脂身と旨味が絶妙に絡み合った美味しい部位です。コリコリとした食感とジューシーな味わいが特徴で、焼くことで香ばしさが増し食欲をそそります。焼くと外はカリッと、中は柔らかく、口の中で旨味が広がります。豚特有の深い味わいが楽しめるため、ホルモン好きにはたまらない一品。</p>
 					</div>
 				</div>
 			</div>

@@ -30,7 +30,7 @@ section {
 
 	.contents-wrapper {
 		max-width: 550px;
-		width: calc(100% - 50px);
+		width: calc(100% - 20px);
 	}
 
 
@@ -459,6 +459,9 @@ html {
 
 	.fv-sub-title {
 		font-size: 1.125rem;
+	}
+	.fv-text-box {
+		line-height: 1.5;
 	}
 }
 
@@ -1799,9 +1802,10 @@ html {
 -----------------------------------------------------------------------------------------*/
 
 .menu-food {
+	overflow: hidden;
 	background-image: url(../images/assets/menu-bg.jpg);
 	background-position: center;
-	background-size: auto;
+	background-size: cover;
 	background-repeat: no-repeat;
 	/* position: relative; */
 	margin-top: -216px;
@@ -2227,7 +2231,7 @@ html {
 
 .other-menu {
 	padding-top: 100px;
-	overflow: clip;
+	/* overflow: clip; */
 }
 
 .other-menu-header {
@@ -2390,6 +2394,10 @@ html {
 	.other-menu-item,
 	.menu-drink-item {
 		max-width: none;
+	}
+	
+	.other-menu-comment {
+		width: calc(100% - 20px);
 	}
 }
 
@@ -2658,7 +2666,7 @@ html {
 .company {
 	background-image: url(../images/assets/company-bg.jpg);
 	background-position: center;
-	background-size: auto;
+	background-size: cover;
 	background-repeat: no-repeat;
 	margin-top: -216px;
 	/* position: relative; */
@@ -2751,7 +2759,7 @@ html {
 .other-business {
 	background-image: url(../images/assets/other-business-bg.jpg);
 	background-position: center;
-	background-size: auto;
+	background-size: cover;
 	background-repeat: no-repeat;
 	margin-top: -216px;
 	/* position: relative; */
@@ -2846,7 +2854,7 @@ html {
 .contact {
 	background-image: url(../images/assets/contact-tel-bg.jpg);
 	background-position: center;
-	background-size: auto;
+	background-size: cover;
 	background-repeat: no-repeat;
 	margin-top: -216px;
 	/* position: relative; */
@@ -2968,10 +2976,12 @@ html {
 
 	.contact-tel-content {
 		flex-direction: column;
+		justify-content: center;
 	}
 
 	.contact-tel-body {
 		width: auto;
+		width: fit-content;
 	}
 
 	.contact-tel-title {
@@ -3007,7 +3017,7 @@ html {
 .form {
 	background-image: url(../images/assets/contact-bg.jpg);
 	background-position: center;
-	background-size: auto;
+	background-size: cover;
 	background-repeat: no-repeat;
 }
 
@@ -3325,10 +3335,13 @@ html {
 
 /*recruit
 -----------------------------------------------------------------------------------------*/
+.recruit-color {
+	color: rgb(51, 51, 51);
+}
 .recruit-introduction {
 	background-image: url(../images/assets/recruit-top-bg.png);
 	background-position: center;
-	background-size: auto;
+	background-size: cover;
 	background-repeat: no-repeat;
 	margin-top: -216px;
 	/* position: relative; */
@@ -3485,7 +3498,7 @@ html {
 .recruit-flow {
 	background-image: url(../images/assets/recruit-flow-bg03.jpg);
 	background-position: center;
-	background-size: auto;
+	background-size: cover;
 	background-repeat: no-repeat;
 	position: relative;
 	z-index: -2;
@@ -3758,6 +3771,7 @@ html {
 
 	.recruit-break {
 		margin-top: 30px;
+		text-align: center;
 		margin-inline: auto;
 	}
 
@@ -3837,6 +3851,7 @@ html {
 }
 
 .nikai-miso {
+	overflow: hidden;
 	padding-top: 0;
 	padding-bottom: 0;
 }
@@ -4220,6 +4235,7 @@ html {
 
 .hormone-text {
 	margin-top: 30px;
+	text-align: left;
 }
 
 .pig-hormone-title {

@@ -322,7 +322,7 @@
 								</a>
 							</li>
 							<li class="sake-brewery-label">
-								<a href="https://www.yokobue.co.jp//" target="_blank" rel="noopener noreferrer">
+								<a href="https://www.yokobue.co.jp/" target="_blank" rel="noopener noreferrer">
 									<img src="<?php echo get_template_directory_uri(); ?>/images/assets/sake-brewery02.jpg" alt="酒蔵横笛ラベル">
 								</a>
 							</li>
@@ -404,11 +404,11 @@
 								</ul>
 								<ul class="price-menu">
 									<li class="price-title">信州万感(赤・白)</li>
-									<li class="price-fee">7,150円</li>
+									<li class="price-fee">4,400円</li>
 								</ul>
 								<ul class="price-menu">
 									<li class="price-title">シャトーゴイチ(赤・白)</li>
-									<li class="price-fee">4,400円</li>
+									<li class="price-fee">7,150円</li>
 								</ul>
 								<ul class="price-menu">
 									<li class="price-title">カベルネフラン(赤)</li>
@@ -461,7 +461,7 @@
 										</ul>
 									</div>
 									<div class="shochu-text">
-										<p>※各種グラス770円～<br>ボトル6,056円～<br>ご用意しております。</p>
+										<p>※各種グラス770円～<br>ボトル6,056円～<br>ご用意しております</p>
 									</div>
 								</div>
 							</div>
@@ -473,7 +473,7 @@
 								</ul>
 								<ul class="price-menu">
 									<li class="price-title">横笛 檎－ご－</li>
-									<li class="price-fee">825円</li>
+									<li class="price-fee">770円</li>
 								</ul>
 								<ul class="price-menu">
 									<li class="price-title">梅酒(南高梅・緑茶)</li>

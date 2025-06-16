@@ -23,13 +23,12 @@
 						<p class="contact-tel-text">ご予約の方はお電話で承っております。<br>お気軽にご連絡くださいませ。</p>
 						<p class="contact-seat">席数：カウンター8席・6人掛けテーブル4つ</p>
 						<p class="contact-parking">駐車場：あり（6台）</p>
-						<p class="contact-payment">お支払い：各種クレジットカード、交通系IC、PayPay<span class="sp">、</span><span class="br-span">インボイス対応可</span></p>
+						<p class="contact-payment">お支払い：各種クレジットカード、交通系IC、PayPay<span class="sp">、</span><br>インボイス対応可</p>
 					</div>
 					<div class="contact-number-body">
 						<a href="tel:0266-78-6543" class="tel-link">
 							<div class="contact-number-icon">
 								<img src="<?php echo get_template_directory_uri(); ?>/images/assets/phone-icon.svg" alt="電話マークアイコン">
-
 							</div>
 							<div class="contact-number-box">
 								<span class="contact-number-tel">0266-78-6543</span>
