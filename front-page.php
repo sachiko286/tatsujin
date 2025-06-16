@@ -36,29 +36,15 @@
 
 		<section class="sake">
 			<div class="sake-wrapper fade-in">
-				<div class="sake-pc pc">
+				<div class="sake-content">
 					<div class="sake-img">
 						<img src="<?php echo get_template_directory_uri(); ?>/images/assets/sake.png" alt="酒">
 					</div>
-					<div class="sake-content">
-						<!-- <div class="sake-title-area"> -->
-						<div class="sake-main-title">
-							<p>諏訪地域</p>
-							<p><span>九</span>蔵の地酒</p>
-						</div>
+					<div class="sake-main-title">
+						<p>諏訪地域<span class="sake-main-span">九蔵の地酒</span></p>
+					</div>
+					<div class="sake-sub-title-content">
 						<div class="sake-sub-title">酒</div>
-						<!-- </div> -->
-					</div>
-				</div>
-				<div class="sake-sp sp">
-					<div class="sake-sp-title">
-						<p>諏訪地域<span>九</span>蔵の地酒</p>
-					</div>
-					<div class="sake-sp-img">
-						<img src="<?php echo get_template_directory_uri(); ?>/images/assets/sake.png" alt="酒">
-					</div>
-					<div class="sake-sp-deco">
-						<img src="<?php echo get_template_directory_uri(); ?>/images/assets/sake-sp-deco.png" alt="酒">
 					</div>
 				</div>
 			</div>
@@ -71,28 +57,17 @@
 
 		<section class="skewer">
 			<div class="skewer-wrapper fade-in">
-				<div class="skewer-pc pc">
-					<div class="skewer-content">
-						<!-- <div class="sake-title-area"> -->
-						<div class="skewer-sub-title">串</div>
-						<div class="skewer-main-title">
-							<p><span>炭</span>火の手打ち串焼き</p>
-						</div>
-
-						<!-- </div> -->
-					</div>
-					<div class="skewer-img">
-						<img src="<?php echo get_template_directory_uri(); ?>/images/assets/skewer-img.png" alt="串">
-					</div>
-				</div>
-				<div class="skewer-sp sp">
-					<div class="skewer-sp-title">
+				<div class="skewer-content">
+					<div class="skewer-main-title">
 						<p>炭火の手打ち串焼き</p>
 					</div>
-					<div class="skewer-sp-deco">
-						<img src="<?php echo get_template_directory_uri(); ?>/images/assets/skewer-sp-deco.png" alt="酒">
+					<div class="skewer-sub-title-content">
+						<div class="skewer-sub-title">串</div>
 					</div>
-					<div class="skewer-sp-img">
+					<div class="skewer-img pc">
+						<img src="<?php echo get_template_directory_uri(); ?>/images/assets/skewer-img.png" alt="串">
+					</div>
+					<div class="skewer-sp-img sp">
 						<img src="<?php echo get_template_directory_uri(); ?>/images/assets/skewer-sp-img.png" alt="酒">
 					</div>
 				</div>

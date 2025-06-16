@@ -73,7 +73,7 @@ html {
 }
 
 html {
-	scroll-padding-top:160px;
+	scroll-padding-top: 160px;
 }
 
 
@@ -460,6 +460,7 @@ html {
 	.fv-sub-title {
 		font-size: 1.125rem;
 	}
+
 	.fv-text-box {
 		line-height: 1.5;
 	}
@@ -486,8 +487,8 @@ html {
 
 	.fv-content {
 		padding-top: 100px;
-		padding-left: 20px;
-		padding-right: 20px;
+		padding-left: 10px;
+		padding-right: 10px;
 		justify-content: center;
 		max-width: 550px;
 	}
@@ -499,7 +500,7 @@ html {
 
 .sake {
 
-	padding: 134px 0 200px;
+	padding: 180px 0 200px;
 	background-image: url(../images/assets/sake-bg.png);
 	background-position: center;
 	background-size: 100% 100%;
@@ -514,53 +515,55 @@ html {
 	margin-inline: auto;
 }
 
-.sake-pc {
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
+
+.sake-content {
+	position: relative;
 }
 
 .sake-img {
 	max-width: 756px;
 	width: 50.4%;
-	margin-top: 123px;
-}
-
-.sake-content {
-	flex: 1;
-	display: flex;
-	justify-content: end;
-	gap: 15.8602%;
+	margin-top: 100px;
+	position: absolute;
 }
 
 .sake-main-title {
 	display: flex;
-	flex-direction: row-reverse;
 	height: fit-content;
+	justify-content: center;
+	margin-left: 442px;
 }
 
 .sake-main-title p {
 	font-weight: 700;
 	font-size: 3rem;
-	/* line-height: 60px; */
-	/* text-align: center; */
+
 	color: rgba(255, 255, 255, 1);
 	-ms-writing-mode: tb-rl;
 	writing-mode: vertical-rl;
 	line-height: calc(60 / 48);
 	letter-spacing: 0.2em;
+	padding-right: clamp(22.125rem, 8.276rem + 21.64vw, 28.563rem);
+	margin-left: auto;
 }
 
-.sake-main-title p:nth-child(2) {
+.sake-main-span {
+	display: block;
 	margin-top: 167px;
+
 }
 
-.sake-main-title span {
+.sake-main-span::first-letter {
 	color: rgba(173, 2, 12, 1);
 	font-family: Shippori Mincho;
 	font-weight: 700;
 	font-size: 4rem;
-	/* line-height: 72.5px; */
+}
+
+.sake-sub-title-content {
+	position: absolute;
+	right: 0;
+	top: -18px;
 }
 
 .sake-sub-title {
@@ -589,7 +592,7 @@ html {
 	color: rgba(255, 255, 255, 1);
 	font-size: 1rem;
 	font-weight: 400;
-	margin-top: -19px;
+	margin-top: 117px;
 	text-align: justify;
 	margin-left: auto;
 
@@ -605,17 +608,13 @@ html {
 		font-size: 16rem;
 	}
 
-	.sake-content {
-		gap: 8%;
-	}
 
 	.sake-sub-title::before {
 		width: 70%;
 	}
 
 	.sake-img {
-		width: 40%;
-		margin-top: 0;
+		width: 45%;
 	}
 
 	.sake-text {
@@ -630,43 +629,46 @@ html {
 	}
 
 	.sake-wrapper {
-		margin-top: 200px;
+		margin-top: 150px;
 		justify-content: center;
 		position: relative;
 		max-width: 550px;
 
 	}
 
+	.sake-main-title {
+		justify-content: center;
+		margin-left: 0;
+	}
 
-	.sake-sp-title {
-		font-weight: 700;
+	.sake-main-title p {
+		margin-left: 0;
+		padding-right: 0;
 		font-size: 2rem;
-		text-align: center;
-		color: rgba(255, 255, 255, 1);
-		-ms-writing-mode: tb-rl;
-		writing-mode: vertical-rl;
-		position: relative;
-		z-index: 10;
-		margin: 0 auto;
 	}
 
-	.sake-sp-title span {
-		color: rgba(173, 2, 12, 1);
+	.sake-main-title span {
+		margin-top: 0;
+		display: inline-block;
 	}
 
-	.sake-sp-img {
-		position: absolute;
-		width: 190px;
-		left: 0;
-		bottom:62px;
+	.sake-main-span::first-letter {
+		font-size: 2rem;
 	}
 
-	.sake-sp-deco {
-		position: absolute;
-		width: 200px;
-		right: -32px;
-		bottom: 0px;
+	.sake-sub-title-content {
+		top: 34px;
 	}
+
+	.sake-sub-title {
+		font-size: 11rem;
+	}
+
+	.sake-sub-title::before {
+		top: 36px;
+		right: -22px;
+	}
+
 }
 
 
@@ -675,7 +677,7 @@ html {
 -----------------------------------------------------------------------------------------*/
 .skewer {
 
-	padding: 134px 0 200px;
+	padding: 30px 0 200px;
 	background-image: url(../images/assets/skewer-bg.png);
 	background-position: center;
 	background-size: 100% 100%;
@@ -685,55 +687,48 @@ html {
 }
 
 .skewer-wrapper {
-
+	position: relative;
 	max-width: 1500px;
 	margin-inline: auto;
 }
 
-.skewer-pc {
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-}
+
 
 .skewer-img {
 	max-width: 788px;
 	width: 50.8%;
-	margin-top: 100px;
+	/* margin-top: 100px; */
 	transform: rotate(-17deg);
-	margin-right: -80px;
-}
-
-.skewer-content {
-	flex: 1;
-	display: flex;
-	justify-content: start;
-	gap: 20%;
-	margin-top: -230px;
+	/* margin-right: -80px; */
+	position: absolute;
+	right: -78px;
+	top: 56px;
 }
 
 
+.skewer-sub-title-content {
+	position: absolute;
+	top: -170px;
+	left: -48px;
+}
 
 .skewer-main-title p {
 	font-weight: 700;
 	font-size: 3rem;
-	/* line-height: 60px; */
-	/* text-align: center; */
 	-ms-writing-mode: tb-rl;
 	writing-mode: vertical-rl;
 	line-height: calc(60 / 48);
 	letter-spacing: 0.2em;
 	margin-top: 134px;
 	white-space: nowrap;
+	margin-left: max(480px, 36.9333%);
 }
 
-
-.skewer-main-title span {
+.skewer-main-title p::first-letter {
 	color: rgba(173, 2, 12, 1);
 	font-family: Shippori Mincho;
 	font-weight: 700;
 	font-size: 4rem;
-	/* line-height: 72.5px; */
 }
 
 .skewer-sub-title {
@@ -742,7 +737,6 @@ html {
 	color: rgba(255, 255, 255, 1);
 	position: relative;
 	z-index: 5;
-	left: -46px;
 }
 
 .skewer-sub-title::before {
@@ -756,19 +750,19 @@ html {
 	position: absolute;
 	top: 94px;
 	z-index: -1;
-	right: -44px;
+	/* right: -44px; */
 }
 
 .skewer-text {
 	max-width: 600px;
 	font-size: 1rem;
 	font-weight: 400;
-	margin-top: -80px;
+	/* margin-top: -80px; */
 	text-align: justify;
 }
 
 @media screen and (max-width:1439px) {
-	.skewer-pc {
+	.skewer-content {
 		margin-top: 100px;
 	}
 
@@ -782,7 +776,7 @@ html {
 }
 
 @media screen and (max-width:1023px) {
-	.skewer-pc {
+	.skewer-content {
 		margin-top: 0;
 	}
 
@@ -790,17 +784,29 @@ html {
 		background-size: cover;
 	}
 
-	.skewer-content {
+	.skewer-sub-title-content {
+		top: 116px;
 		margin-top: 0;
+
 	}
+
+
 
 	.skewer-sub-title {
 		font-size: 16rem;
 		left: 0;
+
 	}
 
+	.skewer-main-title {
+		display: flex;
+		justify-content: center;
+	}
+
+
 	.skewer-main-title p {
-		margin-top: 0;
+		/* margin-top: 0; */
+		margin-left: 0;
 	}
 
 	.skewer-sub-title::before {
@@ -811,6 +817,7 @@ html {
 
 	.skewer-img {
 		margin-top: 0;
+		top: 244px;
 	}
 
 	.skewer-text {
@@ -820,9 +827,10 @@ html {
 	}
 }
 
+
 @media screen and (max-width:767px) {
 	.skewer {
-		padding-top: 100px;
+		padding-top: 120px;
 	}
 
 	.skewer-wrapper {
@@ -831,35 +839,37 @@ html {
 
 	}
 
-	.skewer-sp-title {
-		font-weight: 700;
-		font-size: 2rem;
-		text-align: center;
-		-ms-writing-mode: tb-rl;
-		writing-mode: vertical-rl;
-		position: relative;
-		z-index: 10;
-		margin: 0 auto;
+	.skewer-main-title p {
+		margin-top: 0;
 	}
 
-	.skewer-sp-title::first-letter {
-		color: rgba(173, 2, 12, 1);
+	.skewer-main-title p,
+	.skewer-main-title p::first-letter {
+		font-size: 2rem;
+	}
+
+	.skewer-sub-title-content {
+		top: -50px;
+		left: -20px;
+	}
+
+	.skewer-sub-title {
+		font-size: 11rem;
+	}
+
+	.skewer-sub-title::before {
+		width: 192px;
+		right: -25px;
+		top: 30px;
 	}
 
 	.skewer-sp-img {
 		position: absolute;
 		width: 222px;
 		right: -40px;
-		bottom: 20px;
+		bottom: 54px;
 	}
 
-	.skewer-sp-deco {
-		position: absolute;
-		width: 194px;
-		left: -28px;
-		top: -80px;
-
-	}
 }
 
 
@@ -2393,7 +2403,7 @@ html {
 	.menu-drink-item {
 		max-width: none;
 	}
-	
+
 	.other-menu-comment {
 		width: calc(100% - 20px);
 	}
@@ -3336,6 +3346,7 @@ html {
 .recruit-color {
 	color: rgb(51, 51, 51);
 }
+
 .recruit-introduction {
 	background-image: url(../images/assets/recruit-top-bg.png);
 	background-position: center;
