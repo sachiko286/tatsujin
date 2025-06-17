@@ -863,11 +863,9 @@ html {
 		top: 30px;
 	}
 
-	.skewer-sp-img {
-		position: absolute;
-		width: 222px;
-		right: -40px;
-		bottom: 54px;
+	.skewer-img {
+		right: -20px;
+		top: 100px;
 	}
 
 }

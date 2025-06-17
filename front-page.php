@@ -64,12 +64,12 @@
 					<div class="skewer-sub-title-content">
 						<div class="skewer-sub-title">串</div>
 					</div>
-					<div class="skewer-img pc">
+					<div class="skewer-img">
 						<img src="<?php echo get_template_directory_uri(); ?>/images/assets/skewer-img.png" alt="串">
 					</div>
-					<div class="skewer-sp-img sp">
+					<!-- <div class="skewer-sp-img sp">
 						<img src="<?php echo get_template_directory_uri(); ?>/images/assets/skewer-sp-img.png" alt="酒">
-					</div>
+					</div> -->
 				</div>
 			</div>
 			<div class="contents-wrapper">
